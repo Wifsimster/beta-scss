@@ -10,6 +10,7 @@ module.exports = {
     path.resolve("src/scss/_cursor.scss"),
     path.resolve("src/scss/_decoration.scss"),
     path.resolve("src/scss/_display.scss"),
+    path.resolve("src/scss/_flex.scss"),
     path.resolve("src/scss/_float.scss"),
     path.resolve("src/scss/_font-size.scss"),
     path.resolve("src/scss/_height.scss"),
