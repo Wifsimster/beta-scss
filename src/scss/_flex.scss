@@ -70,9 +70,9 @@ $justify: (
   }
 }
 
-$flex: (initial, "1", auto, none);
+$flex: (initial, 1, auto, none);
 
-@each $name in $justify {
+@each $name in $flex {
   .flex\:#{$name} {
     flex: $name;
   }
