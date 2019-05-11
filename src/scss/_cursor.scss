@@ -1,0 +1,7 @@
+$cursor: ("auto", "default", "pointer", "wait", "move", "not-allowed");
+
+@each $name in $cursor {
+  .cursor\:#{$name} {
+    cursor: $name;
+  }
+}

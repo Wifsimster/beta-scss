@@ -1,0 +1,79 @@
+$direction: ("row", "row-reverse", "col", "col-reverse");
+
+@each $name in $direction {
+  .flex\:#{$name} {
+    flex-direction: $name;
+  }
+}
+
+$wrapping: ("no-wrap", "wrap", "wrap-reverse");
+
+@each $name in $wrapping {
+  .flex\:#{$name} {
+    flex-wrap: $name;
+  }
+}
+
+$items: (
+  "stretch": stretch,
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "baseline": baseline
+);
+
+@each $name, $value in $items {
+  .items\:#{$name} {
+    align-items: $value;
+  }
+}
+
+$content: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "between": space-between,
+  "around": space-around
+);
+
+@each $name, $value in $content {
+  .content\:#{$name} {
+    align-content: $value;
+  }
+}
+
+$align: (
+  "auto": auto,
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "stretch": stretch
+);
+
+@each $name, $value in $align {
+  .self\:#{$name} {
+    align-self: $value;
+  }
+}
+
+$justify: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "between": space-between,
+  "around": space-around
+);
+
+@each $name, $value in $justify {
+  .justify\:#{$name} {
+    justify-content: $value;
+  }
+}
+
+$flex: ("initial", "1", "auto", "none");
+
+@each $name in $justify {
+  .flex\:#{$name} {
+    flex: $name;
+  }
+}

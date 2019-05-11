@@ -1,0 +1,7 @@
+$event: ("none", "auto");
+
+@each $name in $event {
+  .pointer-events\:#{$name} {
+    pointer-events: $name;
+  }
+}

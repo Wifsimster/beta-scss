@@ -2,12 +2,52 @@ $margin: (
   "1\\/4": calc(1rem / 4),
   "1\\/3": calc(1rem / 3),
   "1\\/2": calc(1rem / 2),
+  "1": 1rem,
   "3\\/2": calc(3rem / 2),
-  "2": 2rem
+  "2": 2rem,
+  "auto": auto
 );
 
 @each $name, $value in $margin {
   .m\:#{$name} {
     margin: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .mt\:#{$name} {
+    margin-top: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .mr\:#{$name} {
+    margin-right: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .mb\:#{$name} {
+    margin-bottom: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .ml\:#{$name} {
+    margin-left: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .mx\:#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
+
+@each $name, $value in $margin {
+  .my\:#{$name} {
+    margin-left: $value;
+    margin-right: $value;
   }
 }

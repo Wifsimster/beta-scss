@@ -1,0 +1,19 @@
+$overflow: ("auto", "hidden", "visible", "scroll");
+
+@each $name in $overflow {
+  .overflow\:#{$name} {
+    overflow: $name;
+  }
+}
+
+@each $name in $overflow {
+  .overflow-x\:#{$name} {
+    overflow: $name;
+  }
+}
+
+@each $name in $overflow {
+  .overflow-y\:#{$name} {
+    overflow: $name;
+  }
+}

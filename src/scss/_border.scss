@@ -68,37 +68,66 @@ $colors: (
 );
 
 @each $name, $value in $colors {
-  .text\:#{$name} {
-    color: $value;
+  .border\:#{$name} {
+    border-color: $value;
   }
 }
 
-@each $name, $value in $colors {
-  .bg\:#{$name} {
-    background-color: $value;
+*,
+:after,
+:before {
+  border: 0 solid #dae1e7;
+}
+
+$style: ("solid", "dashed", "dotted", "none");
+
+@each $name in $style {
+  .border\:#{$name} {
+    border-style: $name;
   }
 }
 
-@each $name, $value in $colors {
-  .hover\:text\:#{$name}:hover {
-    color: $value;
-  }
+.border {
+  border-width: 1px;
 }
 
-@each $name, $value in $colors {
-  .hover\:bg\:#{$name}:hover {
-    background-color: $value;
-  }
+.border\:t {
+  border-top-width: 1px;
 }
 
-@each $name, $value in $colors {
-  .focus\:text\:#{$name}:focus {
-    color: $value;
-  }
+.border\:r {
+  border-right-width: 1px;
 }
 
-@each $name, $value in $colors {
-  .focus\:bg\:#{$name}:focus {
-    background-color: $value;
+.border\:b {
+  border-bottom-width: 1px;
+}
+
+.border\:l {
+  border-left-width: 1px;
+}
+
+$size: (
+  "0": 0,
+  "2": "2px",
+  "3": "3px",
+  "4": "4px"
+);
+
+@each $name, $value in $size {
+  .border\:#{$name} {
+    border-width: $value;
+  }
+  .border\:t\:#{$name} {
+    border-top-width: $value;
+  }
+  .border\:r\:#{$name} {
+    border-right-width: $value;
+  }
+  .border\:b\:#{$name} {
+    border-bottom-width: $value;
+  }
+  .border\:l\:#{$name} {
+    border-left-width: $value;
   }
 }

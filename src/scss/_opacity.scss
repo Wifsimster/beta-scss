@@ -1,0 +1,13 @@
+$opacity: (
+  "100": 1,
+  "75": 0.75,
+  "50": 0.5,
+  "25": 0.25,
+  "0": 0
+);
+
+@each $name, $value in $opacity {
+  .opacity\:#{$name} {
+    opacity: $value;
+  }
+}

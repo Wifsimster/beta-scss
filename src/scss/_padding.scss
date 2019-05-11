@@ -1,0 +1,53 @@
+$padding: (
+  "1\\/4": calc(1rem / 4),
+  "1\\/3": calc(1rem / 3),
+  "1\\/2": calc(1rem / 2),
+  "1": 1rem,
+  "3\\/2": calc(3rem / 2),
+  "2": 2rem,
+  "auto": auto
+);
+
+@each $name, $value in $padding {
+  .p\:#{$name} {
+    padding: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .pt\:#{$name} {
+    padding-top: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .pr\:#{$name} {
+    padding-right: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .pb\:#{$name} {
+    padding-bottom: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .pl\:#{$name} {
+    padding-left: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .px\:#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+@each $name, $value in $padding {
+  .py\:#{$name} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+}

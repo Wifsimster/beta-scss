@@ -1,0 +1,7 @@
+$align: ("baseline", "top", "middle", "bottom", "text-top", "text-bottom");
+
+@each $name in $align {
+  .align\:#{$name} {
+    vertical-align: $name;
+  }
+}
