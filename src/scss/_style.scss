@@ -1,4 +1,4 @@
-$style: ("italic", "normal", "oblique");
+$style: (italic, normal, oblique);
 
 @each $name in $style {
   .style\:#{$name} {

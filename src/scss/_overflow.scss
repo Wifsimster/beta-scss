@@ -1,4 +1,4 @@
-$overflow: ("auto", "hidden", "visible", "scroll");
+$overflow: (auto, hidden, visible, scroll);
 
 @each $name in $overflow {
   .overflow\:#{$name} {

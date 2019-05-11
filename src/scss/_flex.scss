@@ -1,4 +1,4 @@
-$direction: ("row", "row-reverse", "col", "col-reverse");
+$direction: (row, row-reverse, col, col-reverse);
 
 @each $name in $direction {
   .flex\:#{$name} {
@@ -6,7 +6,7 @@ $direction: ("row", "row-reverse", "col", "col-reverse");
   }
 }
 
-$wrapping: ("no-wrap", "wrap", "wrap-reverse");
+$wrapping: (no-wrap, wrap, wrap-reverse);
 
 @each $name in $wrapping {
   .flex\:#{$name} {
@@ -70,7 +70,7 @@ $justify: (
   }
 }
 
-$flex: ("initial", "1", "auto", "none");
+$flex: (initial, 1, auto, none);
 
 @each $name in $justify {
   .flex\:#{$name} {

@@ -79,7 +79,7 @@ $colors: (
   border: 0 solid #dae1e7;
 }
 
-$style: ("solid", "dashed", "dotted", "none");
+$style: (solid, dashed, dotted, none);
 
 @each $name in $style {
   .border\:#{$name} {
@@ -109,9 +109,9 @@ $style: ("solid", "dashed", "dotted", "none");
 
 $size: (
   "0": 0,
-  "2": "2px",
-  "3": "3px",
-  "4": "4px"
+  "2": 2px,
+  "3": 3px,
+  "4": 4px
 );
 
 @each $name, $value in $size {

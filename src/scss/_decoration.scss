@@ -1,4 +1,4 @@
-$decoration: ("underline", "line-through", "none");
+$decoration: (underline, line-through, none);
 
 @each $name in $decoration {
   .decoration\:#{$name} {

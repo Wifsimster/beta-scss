@@ -1,6 +1,6 @@
 {
   "name": "beta-scss",
-  "version": "1.0.1",
+  "version": "0.0.10",
   "description": "Minimalistic utility SCSS kit for developer",
   "main": "dist/style.js",
   "devDependencies": {
@@ -14,7 +14,8 @@
   },
   "scripts": {
     "dev": "webpack --config webpack.config.js --mode development",
-    "prod": "webpack --config webpack.config.js --mode production"
+    "prod": "webpack --config webpack.config.js --mode production",
+    "publish": "npm publish"
   },
   "repository": {
     "type": "git",

@@ -1,4 +1,4 @@
-$index: ("0", "10", "20", "30", "40", "50", "auto");
+$index: (0, 10, 20, 30, 40, 50, auto);
 
 @each $name in $index {
   .z\:#{$name} {

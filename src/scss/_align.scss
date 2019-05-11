@@ -1,4 +1,4 @@
-$align: ("baseline", "top", "middle", "bottom", "text-top", "text-bottom");
+$align: (baseline, top, middle, bottom, text-top, text-bottom);
 
 @each $name in $align {
   .align\:#{$name} {

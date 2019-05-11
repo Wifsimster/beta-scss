@@ -1,4 +1,4 @@
-$style: ("capitalize", "lowercase", "none", "uppercase");
+$style: (capitalize, lowercase, none, uppercase);
 
 @each $name in $style {
   .transform\:#{$name} {
