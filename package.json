@@ -1,5 +1,5 @@
 {
-  "name": "beta",
+  "name": "beta-scss",
   "version": "1.0.0",
   "description": "Utility SCSS kit for developer",
   "main": "dist/style.js",
