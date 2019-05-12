@@ -1,16 +1,25 @@
-$direction: (row, row-reverse, col, col-reverse);
+$direction: (
+  "row": row,
+  "row-reverse": row-reverse,
+  "col": column,
+  "col-reverse": column-reverse
+);
 
-@each $name in $direction {
+@each $name, $value in $direction {
   .flex\:#{$name} {
-    flex-direction: $name;
+    flex-direction: $value;
   }
 }
 
-$wrapping: (no-wrap, wrap, wrap-reverse);
+$wrapping: (
+  "no-wrap": nowrap,
+  "wrap": wrap,
+  "wrap-reverse": wrap-reverse
+);
 
-@each $name in $wrapping {
+@each $name, $value in $wrapping {
   .flex\:#{$name} {
-    flex-wrap: $name;
+    flex-wrap: $value;
   }
 }
 
@@ -70,10 +79,16 @@ $justify: (
   }
 }
 
-$flex: (initial, 1, auto, none);
+$flex: (
+  "initial": initial,
+  "1": 1,
+  "auto": auto,
+  "none": none,
+  "full": 0 0 100%
+);
 
-@each $name in $flex {
+@each $name, $value in $flex {
   .flex\:#{$name} {
-    flex: $name;
+    flex: $value;
   }
 }
