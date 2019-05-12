@@ -1,51 +1,43 @@
-$margin: (
-  "1\\/4": calc(1rem / 4),
-  "1\\/3": calc(1rem / 3),
-  "1\\/2": calc(1rem / 2),
-  "1": 1rem,
-  "3\\/2": calc(3rem / 2),
-  "2": 2rem,
-  "auto": auto
-);
+@import "variables";
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .m\:#{$name} {
     margin: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .mt\:#{$name} {
     margin-top: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .mr\:#{$name} {
     margin-right: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .mb\:#{$name} {
     margin-bottom: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .ml\:#{$name} {
     margin-left: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .mx\:#{$name} {
     margin-top: $value;
     margin-bottom: $value;
   }
 }
 
-@each $name, $value in $margin {
+@each $name, $value in $margins {
   .my\:#{$name} {
     margin-left: $value;
     margin-right: $value;

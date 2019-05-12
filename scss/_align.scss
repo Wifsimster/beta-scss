@@ -1,7 +1,7 @@
-$align: (baseline, top, middle, bottom, text-top, text-bottom);
+@import "variables";
 
-@each $name in $align {
+@each $name, $value in $vertical-aligns {
   .align\:#{$name} {
-    vertical-align: $name;
+    vertical-align: $value;
   }
 }

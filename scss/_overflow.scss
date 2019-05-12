@@ -1,19 +1,19 @@
-$overflow: (auto, hidden, visible, scroll);
+@import "variables";
 
-@each $name in $overflow {
+@each $name, $value in $overflows {
   .overflow\:#{$name} {
-    overflow: $name;
+    overflow: $value;
   }
 }
 
-@each $name in $overflow {
+@each $name, $value in $overflows {
   .overflow-x\:#{$name} {
-    overflow: $name;
+    overflow: $value;
   }
 }
 
-@each $name in $overflow {
+@each $name, $value in $overflows {
   .overflow-y\:#{$name} {
-    overflow: $name;
+    overflow: $value;
   }
 }

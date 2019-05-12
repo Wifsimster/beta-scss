@@ -6,87 +6,101 @@
   </head>
 
   <body>
-    <div class="flex flex:col w:screen h:screen bg:grey-darkest text:white">
+    <div class="flex flex:col w:screen h:screen bg:black text:white overflow-x:hidden">
       <div class="flex:1 text:center">
         <h1>Beta SCSS</h1>
       </div>
-      <div class="flex:full">
-        <h2>Colors</h2>
+      <div class="flex:full text:center py:1">
         <div class="flex">
-          <div class="p:1 m:1 bg:black border"></div>
-          <div class="p:1 m:1 bg:grey-darkest border"></div>
-          <div class="p:1 m:1 bg:grey-darker border"></div>
-          <div class="p:1 m:1 bg:grey-dark border"></div>
-          <div class="p:1 m:1 bg:grey border"></div>
-          <div class="p:1 m:1 bg:grey-light border"></div>
-          <div class="p:1 m:1 bg:grey-lighter border"></div>
-          <div class="p:1 m:1 bg:grey-lightest border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:black border rounded shadow">black</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-darkest border rounded shadow">grey-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-darker border rounded shadow">grey-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-dark border rounded shadow">grey-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey border rounded shadow">grey</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-light border rounded shadow text:grey-darkest">grey-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-lighter border rounded shadow text:grey-darkest">grey-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:grey-lightest border rounded shadow text:grey-darkest">grey-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:red-darkest border"></div>
-          <div class="p:1 m:1 bg:red-darker border"></div>
-          <div class="p:1 m:1 bg:red-dark border"></div>
-          <div class="p:1 m:1 bg:red border"></div>
-          <div class="p:1 m:1 bg:red-light border"></div>
-          <div class="p:1 m:1 bg:red-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:red-darkest border rounded shadow">red-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:red-darker border rounded shadow">red-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:red-dark border rounded shadow">red-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:red border rounded shadow">red</div>
+          <div class="flex:1 p:1 m:1/2 bg:red-light border rounded shadow">red-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:red-lighter border rounded shadow text:grey-darkest">red-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:red-lightest border rounded shadow text:grey-darkest">red-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:orange-darkest border"></div>
-          <div class="p:1 m:1 bg:orange-darker border"></div>
-          <div class="p:1 m:1 bg:orange-dark border"></div>
-          <div class="p:1 m:1 bg:orange border"></div>
-          <div class="p:1 m:1 bg:orange-light border"></div>
-          <div class="p:1 m:1 bg:orange-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-darkest border rounded shadow">orange-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-darker border rounded shadow">orange-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-dark border rounded shadow">orange-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange border rounded shadow">orange</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-light border rounded shadow ">orange-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-lighter border rounded shadow text:grey-darkest">orange-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:orange-lightest border rounded shadow text:grey-darkest">orange-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:yellow-darkest border"></div>
-          <div class="p:1 m:1 bg:yellow-darker border"></div>
-          <div class="p:1 m:1 bg:yellow-dark border"></div>
-          <div class="p:1 m:1 bg:yellow border"></div>
-          <div class="p:1 m:1 bg:yellow-light border"></div>
-          <div class="p:1 m:1 bg:yellow-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-darkest border rounded shadow">yellow-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-darker border rounded shadow">yellow-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-dark border rounded shadow">yellow-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow border rounded shadow text:grey-darkest">yellow</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-light border rounded shadow text:grey-darkest">yellow-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-lighter border rounded shadow text:grey-darkest">yellow-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:yellow-lightest border rounded shadow text:grey-darkest">yellow-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:green-darkest border"></div>
-          <div class="p:1 m:1 bg:green-darker border"></div>
-          <div class="p:1 m:1 bg:green-dark border"></div>
-          <div class="p:1 m:1 bg:green border"></div>
-          <div class="p:1 m:1 bg:green-light border"></div>
-          <div class="p:1 m:1 bg:green-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:green-darkest border rounded shadow">green-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:green-darker border rounded shadow">green-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:green-dark border rounded shadow">green-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:green border rounded shadow">green</div>
+          <div class="flex:1 p:1 m:1/2 bg:green-light border rounded shadow">green-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:green-lighter border rounded shadow text:grey-darkest">green-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:green-lightest border rounded shadow text:grey-darkest">green-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:teal-darkest border"></div>
-          <div class="p:1 m:1 bg:teal-darker border"></div>
-          <div class="p:1 m:1 bg:teal-dark border"></div>
-          <div class="p:1 m:1 bg:teal border"></div>
-          <div class="p:1 m:1 bg:teal-light border"></div>
-          <div class="p:1 m:1 bg:teal-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-darkest border rounded shadow">teal-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-darker border rounded shadow">teal-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-dark border rounded shadow">teal-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal border rounded shadow">teal</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-light border rounded shadow">teal-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-lighter border rounded shadow text:grey-darkest">teal-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:teal-lightest border rounded shadow text:grey-darkest">teal-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:blue-darkest border"></div>
-          <div class="p:1 m:1 bg:blue-darker border"></div>
-          <div class="p:1 m:1 bg:blue-dark border"></div>
-          <div class="p:1 m:1 bg:blue border"></div>
-          <div class="p:1 m:1 bg:blue-light border"></div>
-          <div class="p:1 m:1 bg:blue-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-darkest border rounded shadow">blue-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-darker border rounded shadow">blue-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-dark border rounded shadow">blue-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue border rounded shadow">blue</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-light border rounded shadow">blue-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-lighter border rounded shadow text:grey-darkest">blue-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:blue-lightest border rounded shadow text:grey-darkest">blue-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:indigo-darkest border"></div>
-          <div class="p:1 m:1 bg:indigo-darker border"></div>
-          <div class="p:1 m:1 bg:indigo-dark border"></div>
-          <div class="p:1 m:1 bg:indigo border"></div>
-          <div class="p:1 m:1 bg:indigo-light border"></div>
-          <div class="p:1 m:1 bg:indigo-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-darkest border rounded shadow">indigo-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-darker border rounded shadow">indigo-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-dark border rounded shadow">indigo-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo border rounded shadow">indigo</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-light border rounded shadow">indigo-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-lighter border rounded shadow text:grey-darkest">indigo-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:indigo-lightest border rounded shadow text:grey-darkest">indigo-lightest</div>
         </div>
         <div class="flex">
-          <div class="p:1 m:1 bg:pink-darkest border"></div>
-          <div class="p:1 m:1 bg:pink-darker border"></div>
-          <div class="p:1 m:1 bg:pink-dark border"></div>
-          <div class="p:1 m:1 bg:pink border"></div>
-          <div class="p:1 m:1 bg:pink-light border"></div>
-          <div class="p:1 m:1 bg:pink-lighter border"></div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-darkest border rounded shadow">pink-darkest</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-darker border rounded shadow">pink-darker</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-dark border rounded shadow">pink-dark</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink border rounded shadow">pink</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-light border rounded shadow">pink-light</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-lighter border rounded shadow text:grey-darkest">pink-lighter</div>
+          <div class="flex:1 p:1 m:1/2 bg:pink-lightest border rounded shadow text:grey-darkest">pink-lightest</div>
         </div>
       </div>
+    </div>
+    <div class="flex:full my:1">
+      <div class="w:1"></div>
+      <div class="w:1"></div>
+      <div class="w:1"></div>
+      <div class="w:1"></div>
+      <div class="w:1"></div>
     </div>
     <script src="./dist/style.js" charset="utf-8"></script>
   </body>
@@ -95,9 +109,6 @@
     * {
       margin: 0;
       padding: 0;
-    }
-    html {
-      font-size: 16px;
     }
   </style>
 </html>

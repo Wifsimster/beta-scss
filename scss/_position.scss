@@ -1,7 +1,7 @@
-$position: (static, fixed, absolute, relative);
+@import "variables";
 
-@each $name in $position {
+@each $name, $value in $positions {
   .#{$name} {
-    position: $name;
+    position: $value;
   }
 }

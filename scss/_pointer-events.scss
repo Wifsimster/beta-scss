@@ -1,7 +1,7 @@
-$event: (none, auto);
+@import "variables";
 
-@each $name in $event {
+@each $name, $value in $pointer-events {
   .pointer-events\:#{$name} {
-    pointer-events: $name;
+    pointer-events: $value;
   }
 }

@@ -1,7 +1,7 @@
-$style: (capitalize, lowercase, none, uppercase);
+@import "variables";
 
-@each $name in $style {
+@each $name, $value in $text-transforms {
   .transform\:#{$name} {
-    text-transform: $name;
+    text-transform: $value;
   }
 }

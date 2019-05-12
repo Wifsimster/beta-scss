@@ -1,15 +1,6 @@
-$width: (
-  "1\\/4": calc(100% / 4),
-  "1\\/3": calc(100% / 3),
-  "1\\/2": calc(100% / 2),
-  "1": 100%,
-  "3\\/2": calc(300% / 2),
-  "2": 200%,
-  "auto": auto,
-  "screen": 100vw
-);
+@import "variables";
 
-@each $name, $value in $width {
+@each $name, $value in $widths {
   .w\:#{$name} {
     width: $value;
   }

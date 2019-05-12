@@ -1,7 +1,7 @@
-$alignment: (left, center, right, justify);
+@import "variables";
 
-@each $name in $alignment {
+@each $name, $value in $text-aligns {
   .text\:#{$name} {
-    text-align: $name;
+    text-align: $value;
   }
 }

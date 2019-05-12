@@ -1,7 +1,7 @@
-$index: (0, 10, 20, 30, 40, 50, auto);
+@import "variables";
 
-@each $name in $index {
+@each $name, $value in $z-indexs {
   .z\:#{$name} {
-    z-index: $name;
+    z-index: $value;
   }
 }

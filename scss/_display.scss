@@ -1,7 +1,7 @@
-$display: (block, inline-block, inline, hidden, flex, inline-flex);
+@import "variables";
 
-@each $name in $display {
+@each $name, $value in $displays {
   .#{$name} {
-    display: $name;
+    display: $value;
   }
 }

@@ -1,12 +1,6 @@
-$opacity: (
-  "100": 1,
-  "75": 0.75,
-  "50": 0.5,
-  "25": 0.25,
-  "0": 0
-);
+@import "variables";
 
-@each $name, $value in $opacity {
+@each $name, $value in $opacities {
   .opacity\:#{$name} {
     opacity: $value;
   }

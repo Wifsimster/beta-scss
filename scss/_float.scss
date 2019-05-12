@@ -1,6 +1,6 @@
-$float: (right, left, none);
+@import "variables";
 
-@each $name in $float {
+@each $name in $floats {
   .float\:#{$name} {
     float: $name;
   }

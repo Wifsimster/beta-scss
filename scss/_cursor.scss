@@ -1,7 +1,7 @@
-$cursor: (auto, default, pointer, wait, move, not-allowed);
+@import "variables";
 
-@each $name in $cursor {
+@each $name, $value in $cursors {
   .cursor\:#{$name} {
-    cursor: $name;
+    cursor: $value;
   }
 }
