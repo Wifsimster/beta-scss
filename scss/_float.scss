@@ -1,8 +1,8 @@
 @import "variables";
 
-@each $name in $floats {
+@each $name, $value in $floats {
   .float\:#{$name} {
-    float: $name;
+    float: $value;
   }
 }
 
