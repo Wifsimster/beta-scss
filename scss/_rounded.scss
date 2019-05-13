@@ -29,6 +29,9 @@
 }
 
 @each $name, $value in $border-radius {
+  .rounded\:#{$name} {
+    border-radius: #{$value};
+  }
   .rounded\:t\:#{$name} {
     border-top-left-radius: #{$value};
     border-top-right-radius: #{$value};
