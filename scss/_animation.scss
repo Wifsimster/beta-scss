@@ -1,0 +1,34 @@
+@import "variables";
+
+@each $degre in $degres {
+  .rotate\:#{$degre} {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: rotate(#{$degre}deg);
+  }
+
+  .hover\:rotate\:#{$degre}:hover {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: rotate(#{$degre}deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  display: inline-block;
+  animation: rotating 2s linear infinite;
+}
+
+.hover\:rotating:hover {
+  display: inline-block;
+  animation: rotating 2s linear infinite;
+}

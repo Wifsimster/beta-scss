@@ -1,0 +1,7 @@
+@import "variables";
+
+@each $name, $value in $font-weights {
+  .text\:#{$name} {
+    font-weight: $value;
+  }
+}

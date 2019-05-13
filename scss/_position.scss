@@ -5,3 +5,26 @@
     position: $value;
   }
 }
+
+@each $name, $value in $position-sizes {
+  .t\:#{$name} {
+    top: $value;
+  }
+  .r\:#{$name} {
+    right: $value;
+  }
+  .b\:#{$name} {
+    bottom: $value;
+  }
+  .l\:#{$name} {
+    left: $value;
+  }
+  .x\:#{$name} {
+    top: $value;
+    bottom: $value;
+  }
+  .y\:#{$name} {
+    right: $value;
+    left: $value;
+  }
+}

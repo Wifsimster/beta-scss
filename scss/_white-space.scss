@@ -1,0 +1,7 @@
+@import "variables";
+
+@each $name, $value in $white-spaces {
+  .whitespace\:#{$name} {
+    white-space: $value;
+  }
+}

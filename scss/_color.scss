@@ -1,0 +1,13 @@
+@import "variables";
+
+@each $name, $value in $colors {
+  .text\:#{$name} {
+    color: $value;
+  }
+  .hover\:text\:#{$name}:hover {
+    color: $value;
+  }
+  .focus\:text\:#{$name}:focus {
+    color: $value;
+  }
+}

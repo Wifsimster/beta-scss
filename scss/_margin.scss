@@ -4,40 +4,22 @@
   .m\:#{$name} {
     margin: $value;
   }
-}
-
-@each $name, $value in $margins {
   .mt\:#{$name} {
     margin-top: $value;
   }
-}
-
-@each $name, $value in $margins {
   .mr\:#{$name} {
     margin-right: $value;
   }
-}
-
-@each $name, $value in $margins {
   .mb\:#{$name} {
     margin-bottom: $value;
   }
-}
-
-@each $name, $value in $margins {
   .ml\:#{$name} {
     margin-left: $value;
   }
-}
-
-@each $name, $value in $margins {
   .mx\:#{$name} {
     margin-top: $value;
     margin-bottom: $value;
   }
-}
-
-@each $name, $value in $margins {
   .my\:#{$name} {
     margin-left: $value;
     margin-right: $value;

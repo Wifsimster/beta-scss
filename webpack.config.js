@@ -1,19 +1,22 @@
-const path = require("path")
-const CleanWebpackPlugin = require("clean-webpack-plugin")
+const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   entry: [
     path.resolve("scss/_alignment.scss"),
-    path.resolve("scss/_align.scss"),
+    path.resolve("scss/_animation.scss"),
+    path.resolve("scss/_bg-colors.scss"),
     path.resolve("scss/_border.scss"),
-    path.resolve("scss/_colors.scss"),
+    path.resolve("scss/_color.scss"),
     path.resolve("scss/_cursor.scss"),
     path.resolve("scss/_decoration.scss"),
     path.resolve("scss/_display.scss"),
     path.resolve("scss/_flex.scss"),
     path.resolve("scss/_float.scss"),
     path.resolve("scss/_font-size.scss"),
+    path.resolve("scss/_font-weight.scss"),
     path.resolve("scss/_height.scss"),
+    path.resolve("scss/_line-height.scss"),
     path.resolve("scss/_list.scss"),
     path.resolve("scss/_margin.scss"),
     path.resolve("scss/_opacity.scss"),
@@ -25,7 +28,11 @@ module.exports = {
     path.resolve("scss/_shadow.scss"),
     path.resolve("scss/_style.scss"),
     path.resolve("scss/_transform.scss"),
+    path.resolve("scss/_vertical-align.scss"),
+    path.resolve("scss/_visible.scss"),
+    path.resolve("scss/_white-space.scss"),
     path.resolve("scss/_width.scss"),
+    path.resolve("scss/_word-wrap.scss"),
     path.resolve("scss/_z-index.scss")
   ],
   output: {
@@ -46,4 +53,4 @@ module.exports = {
       }
     ]
   }
-}
+};

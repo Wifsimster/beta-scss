@@ -1,0 +1,7 @@
+@import "variables";
+
+@each $name, $value in $line-heights {
+  .line-height\:#{$name} {
+    line-height: $value;
+  }
+}

@@ -4,12 +4,18 @@
   .border\:#{$name} {
     border-color: $value;
   }
+  .hover\:border\:#{$name}:hover {
+    border-color: $value;
+  }
+  .focus\:border\:#{$name}:focus {
+    border-color: $value;
+  }
 }
 
 *,
 :after,
 :before {
-  border: 0 solid map-get($colors, "grey-darker");
+  border: 0 solid map-get($colors, "grey-light");
 }
 
 @each $name, $value in $border-styles {
@@ -19,23 +25,25 @@
 }
 
 .border {
-  border-width: 1px;
+  border-width: $border-width-default;
 }
-
 .border\:t {
-  border-top-width: 1px;
+  border-top-width: $border-width-default;
 }
-
 .border\:r {
-  border-right-width: 1px;
+  border-right-width: $border-width-default;
 }
-
 .border\:b {
-  border-bottom-width: 1px;
+  border-bottom-width: $border-width-default;
 }
-
 .border\:l {
-  border-left-width: 1px;
+  border-left-width: $border-width-default;
+}
+.border\:x {
+  border-left-width: $border-width-default;
+}
+.border\:y {
+  border-left-width: $border-width-default;
 }
 
 @each $name, $value in $border-widths {
@@ -52,6 +60,14 @@
     border-bottom-width: $value;
   }
   .border\:l\:#{$name} {
+    border-left-width: $value;
+  }
+  .border\:x\:#{$name} {
+    border-top-width: $value;
+    border-bottom-width: $value;
+  }
+  .border\:y\:#{$name} {
+    border-right-width: $value;
     border-left-width: $value;
   }
 }

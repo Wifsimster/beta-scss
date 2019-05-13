@@ -4,40 +4,22 @@
   .p\:#{$name} {
     padding: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .pt\:#{$name} {
     padding-top: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .pr\:#{$name} {
     padding-right: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .pb\:#{$name} {
     padding-bottom: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .pl\:#{$name} {
     padding-left: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .px\:#{$name} {
     padding-top: $value;
     padding-bottom: $value;
   }
-}
-
-@each $name, $value in $paddings {
   .py\:#{$name} {
     padding-left: $value;
     padding-right: $value;

@@ -1,29 +1,48 @@
 @import "variables";
 
 .rounded {
-  border-radius: $border-radius;
+  border-radius: $border-radius-default;
 }
 
 .rounded\:t {
-  border-top-left-radius: $border-radius;
-  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius-default;
+  border-top-right-radius: $border-radius-default;
 }
 
 .rounded\:r {
-  border-top-right-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
+  border-top-right-radius: $border-radius-default;
+  border-bottom-right-radius: $border-radius-default;
 }
 
 .rounded\:b {
-  border-bottom-left-radius: $border-radius;
-  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius-default;
+  border-bottom-right-radius: $border-radius-default;
 }
 
 .rounded\:l {
-  border-top-left-radius: $border-radius;
-  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius-default;
+  border-bottom-left-radius: $border-radius-default;
 }
 
 .rounded\:full {
-  border-radius: 9999px;
+  border-radius: get_map($border-radius, "full");
+}
+
+@each $name, $value in $border-radius {
+  .rounded\:t\:#{$name} {
+    border-top-left-radius: #{$value};
+    border-top-right-radius: #{$value};
+  }
+  .rounded\:r\:#{$name} {
+    border-top-right-radius: #{$value};
+    border-bottom-right-radius: #{$value};
+  }
+  .rounded\:b\:#{$name} {
+    border-bottom-left-radius: #{$value};
+    border-bottom-right-radius: #{$value};
+  }
+  .rounded\:l\:#{$name} {
+    border-top-left-radius: #{$value};
+    border-bottom-left-radius: #{$value};
+  }
 }
