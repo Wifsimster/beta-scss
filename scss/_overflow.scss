@@ -8,12 +8,12 @@
 
 @each $name, $value in $overflows {
   .overflow-x\:#{$name} {
-    overflow: $value;
+    overflow-x: $value;
   }
 }
 
 @each $name, $value in $overflows {
   .overflow-y\:#{$name} {
-    overflow: $value;
+    overflow-y: $value;
   }
 }
