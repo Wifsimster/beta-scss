@@ -1,16 +1,16 @@
 @import "variables";
 
-@each $degre in $degres {
-  .rotate\:#{$degre} {
+@each $name, $value in $degres {
+  .rotate\:#{$name} {
     display: inline-block;
     transition: all 0.3s ease;
-    transform: rotate(#{$degre}deg);
+    transform: rotate(#{$value}deg);
   }
 
-  .hover\:rotate\:#{$degre}:hover {
+  .hover\:rotate\:#{$name}:hover {
     display: inline-block;
     transition: all 0.3s ease;
-    transform: rotate(#{$degre}deg);
+    transform: rotate(#{$value}deg);
   }
 }
 
