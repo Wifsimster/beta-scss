@@ -47,3 +47,9 @@
     order: $value;
   }
 }
+
+@each $name, $value in $grows {
+  .flex\:#{$name} {
+    flex-grow: $value;
+  }
+}
