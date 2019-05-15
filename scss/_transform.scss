@@ -1,7 +1,7 @@
 @import "variables";
 
 @each $name, $value in $text-transforms {
-  .transform\:#{$name} {
+  .#{$name} {
     text-transform: $value;
   }
 }

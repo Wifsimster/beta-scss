@@ -1,7 +1,7 @@
 @import "variables";
 
 @each $name, $value in $text-decorations {
-  .decoration\:#{$name} {
+  .#{$name} {
     text-decoration: $value;
   }
 }

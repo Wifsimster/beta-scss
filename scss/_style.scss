@@ -1,7 +1,7 @@
 @import "variables";
 
 @each $name, $value in $font-styles {
-  .style\:#{$name} {
+  .#{$name} {
     font-style: $value;
   }
 }
