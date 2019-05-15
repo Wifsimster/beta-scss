@@ -1,6 +1,6 @@
 {
   "name": "beta-scss",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Minimalistic utility SCSS kit for developer",
   "main": "dist/style.js",
   "devDependencies": {
