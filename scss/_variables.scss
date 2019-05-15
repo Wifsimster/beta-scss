@@ -145,10 +145,10 @@ $flex-wraps: (
 );
 
 $align-items: (
-  "stretch": stretch,
   "start": flex-start,
   "center": center,
   "end": flex-end,
+  "stretch": stretch,
   "baseline": baseline
 );
 
@@ -156,6 +156,7 @@ $align-contents: (
   "start": flex-start,
   "center": center,
   "end": flex-end,
+  "stretch": stretch,
   "between": space-between,
   "around": space-around
 );
