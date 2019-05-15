@@ -181,8 +181,9 @@ $flexs: (
   "auto": 1 1 auto,
   "initial": initial,
   "1": 1 1 0%,
-  "none": none,
-  // "full": 1 1 100%,
+  "2": 2 2 0%,
+  "3": 3 3 0%,
+  "none": none
 );
 
 $floats: (
@@ -403,4 +404,9 @@ $orders: (
 $grows: (
   "grow": 1,
   "grow-none": 0
+);
+
+$shrinks: (
+  "shrink": 1,
+  "shrink-none": 0
 );

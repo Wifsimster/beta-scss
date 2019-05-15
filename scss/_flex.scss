@@ -53,3 +53,9 @@
     flex-grow: $value;
   }
 }
+
+@each $name, $value in $shrinks {
+  .flex\:#{$name} {
+    flex-shrink: $value;
+  }
+}
