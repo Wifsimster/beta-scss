@@ -10,7 +10,7 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-@each $name, $value in $opacities {
+@each $name, $value in $shadows {
   .shadow\:#{$name} {
     opacity: #{$value};
   }
