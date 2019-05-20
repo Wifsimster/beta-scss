@@ -4,4 +4,10 @@
   .opacity\:#{$name} {
     opacity: $value;
   }
+  .hover\:opacity\:#{$name}:hover {
+    opacity: $value;
+  }
+  .focus\:opacity\:#{$name}:focus {
+    opacity: $value;
+  }
 }
