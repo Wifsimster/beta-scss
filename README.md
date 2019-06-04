@@ -1,9 +1,11 @@
-# beta
+# Beta-SCSS
 
 Minimalist utility CSS kit for developer, built on SCSS ! 💾
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/Wifsimster/beta/blob/master/LICENSE)
 [![npm version](https://badge.fury.io/js/beta-scss.svg)](https://www.npmjs.com/package/beta-scss)
+
+Largely inspired by [tailwindcss](https://github.com/tailwindcss/tailwindcss)
 
 **Quick start**
 
@@ -17,6 +19,6 @@ import `beta-scss`
 
 **Documentation**
 
-```javascript
+```html
 // TODO
 ```
