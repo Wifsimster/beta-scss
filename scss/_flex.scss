@@ -61,23 +61,16 @@
 }
 
 // Responsive grid
-@for $i from 1 through 4 {
-  @media (max-width: #{$i * 1920px / 4}) {
-    .responsive\:4 > div {
-      flex-basis: #{100% / $i};
-    }
+.responsive\:12 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  > div {
+    position: relative;
   }
 }
 
-@for $i from 1 through 6 {
-  @media (max-width: #{$i * 1920px / 6}) {
-    .responsive\:6 > div {
-      flex-basis: #{100% / $i};
-    }
-  }
-}
-
-@for $i from 1 through 12 {
+@for $i from 12 through 1 {
   @media (max-width: #{$i * 1920px / 12}) {
     .responsive\:12 > div {
       flex-basis: #{100% / $i};
