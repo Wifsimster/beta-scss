@@ -61,12 +61,21 @@
 }
 
 // Responsive grid
-.responsive\:12 {
+[class^="responsive\:"],
+[class*="responsive\:"] {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   > div {
     position: relative;
+  }
+}
+
+@for $i from 6 through 1 {
+  @media (max-width: #{$i * 1920px / 6}) {
+    .responsive\:6 > div {
+      flex-basis: #{100% / $i};
+    }
   }
 }
 
