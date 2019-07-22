@@ -71,9 +71,33 @@
   }
 }
 
+@for $i from 4 through 1 {
+  @media (max-width: #{$i * 1920px / 4}) {
+    .responsive\:4 > div {
+      flex-basis: #{100% / $i};
+    }
+  }
+}
+
 @for $i from 6 through 1 {
   @media (max-width: #{$i * 1920px / 6}) {
     .responsive\:6 > div {
+      flex-basis: #{100% / $i};
+    }
+  }
+}
+
+@for $i from 8 through 1 {
+  @media (max-width: #{$i * 1920px / 8}) {
+    .responsive\:8 > div {
+      flex-basis: #{100% / $i};
+    }
+  }
+}
+
+@for $i from 10 through 1 {
+  @media (max-width: #{$i * 1920px / 10}) {
+    .responsive\:10 > div {
       flex-basis: #{100% / $i};
     }
   }
