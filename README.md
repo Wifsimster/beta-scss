@@ -19,6 +19,4 @@ import `beta-scss`
 
 **Documentation**
 
-```html
-// TODO
-```
+[Accéder à la documentation](https://wifsimster.github.io/beta-scss-documentation)
