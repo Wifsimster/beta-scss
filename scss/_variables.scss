@@ -421,7 +421,29 @@ $heights: (
   "11\\/12": calc(11 * 100% / 12),
   "auto": auto,
   "full": 100%,
-  "screen": 100vh
+  "screen": 100vh,
+  //320px,
+  "xs": 20rem,
+  //480px,
+  "sm": 30rem,
+  //640px,
+  "md": 40rem,
+  //800px,
+  "lg": 50rem,
+  //960px,
+  "xl": 60rem,
+  //1120px,
+  "2xl": 70rem,
+  //1280px,
+  "3xl": 80rem,
+  //1440px,
+  "4xl": 90rem,
+  //1600px,
+  "5xl": 100rem,
+  //1760px,
+  "6xl": 100rem,
+  //1920px,
+  "7xl": 120rem
 );
 
 $widths: (
@@ -455,11 +477,28 @@ $widths: (
   "auto": auto,
   "full": 100%,
   "screen": 100vw,
+  //320px,
   "xs": 20rem,
+  //480px,
   "sm": 30rem,
+  //640px,
   "md": 40rem,
-  "lg": 0rem,
-  "xl": 20rem
+  //800px,
+  "lg": 50rem,
+  //960px,
+  "xl": 60rem,
+  //1120px,
+  "2xl": 70rem,
+  //1280px,
+  "3xl": 80rem,
+  //1440px,
+  "4xl": 90rem,
+  //1600px,
+  "5xl": 100rem,
+  //1760px,
+  "6xl": 100rem,
+  //1920px,
+  "7xl": 120rem
 );
 
 $table-collapse: (
