@@ -454,5 +454,20 @@ $widths: (
   "11\\/12": calc(11 * 100% / 12),
   "auto": auto,
   "full": 100%,
-  "screen": 100vw
+  "screen": 100vw,
+  "xs": 20rem,
+  "sm": 30rem,
+  "md": 40rem,
+  "lg": 0rem,
+  "xl": 20rem
+);
+
+$table-collapse: (
+  "collapse": collapse,
+  "seperate": seperate
+);
+
+$table-layout: (
+  "auto": auto,
+  "fixed": fixed
 );

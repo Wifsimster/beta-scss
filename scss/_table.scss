@@ -1,0 +1,13 @@
+@import "variables";
+
+@each $name, $value in $table-collapse {
+  .border\:#{$name} {
+    border-collapse: $value;
+  }
+}
+
+@each $name, $value in $table-layout {
+  .table\:#{$name} {
+    table-layout: $value;
+  }
+}
