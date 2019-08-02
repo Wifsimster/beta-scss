@@ -1,512 +1,514 @@
 $colors: (
-  "transparent": transparent,
-  "black": #22292f,
-  "grey-darkest": #3d4852,
-  "grey-darker": #606f7b,
-  "grey-dark": #8795a1,
-  "grey": #b8c2cc,
-  "grey-light": #dae1e7,
-  "grey-lighter": #f1f5f8,
-  "grey-lightest": #f8fafc,
-  "white": #ffffff,
-  "red-darkest": #3b0d0c,
-  "red-darker": #621b18,
-  "red-dark": #cc1f1a,
-  "red": #f44040,
-  "red-light": #f75f51,
-  "red-lighter": #f9acaa,
-  "red-lightest": #ffd8d4,
-  "orange-darkest": #c64411,
-  "orange-darker": #d86501,
-  "orange-dark": #f27e19,
-  "orange": #ff9334,
-  "orange-light": #faad63,
-  "orange-lighter": #fcd9b6,
-  "orange-lightest": #fff5eb,
-  "yellow-darkest": #453411,
-  "yellow-darker": #684f1d,
-  "yellow-dark": #f2d024,
-  "yellow": #ffed4a,
-  "yellow-light": #fff382,
-  "yellow-lighter": #fff9c2,
-  "yellow-lightest": #fcfbeb,
-  "teal-darkest": #0d3331,
-  "teal-darker": #006875,
-  "teal-dark": #017887,
-  "teal": #019bae,
+  'transparent': transparent,
+  'black': #22292f,
+  'grey-darkest': #3d4852,
+  'grey-darker': #606f7b,
+  'grey-dark': #8795a1,
+  'grey': #b8c2cc,
+  'grey-light': #dae1e7,
+  'grey-lighter': #f1f5f8,
+  'grey-lightest': #f8fafc,
+  'white': #ffffff,
+  'red-darkest': #3b0d0c,
+  'red-darker': #621b18,
+  'red-dark': #cc1f1a,
+  'red': #f44040,
+  'red-light': #f75f51,
+  'red-lighter': #f9acaa,
+  'red-lightest': #ffd8d4,
+  'orange-darkest': #c64411,
+  'orange-darker': #d86501,
+  'orange-dark': #f27e19,
+  'orange': #ff9334,
+  'orange-light': #faad63,
+  'orange-lighter': #fcd9b6,
+  'orange-lightest': #fff5eb,
+  'yellow-darkest': #453411,
+  'yellow-darker': #684f1d,
+  'yellow-dark': #f2d024,
+  'yellow': #ffed4a,
+  'yellow-light': #fff382,
+  'yellow-lighter': #fff9c2,
+  'yellow-lightest': #fcfbeb,
+  'teal-darkest': #0d3331,
+  'teal-darker': #006875,
+  'teal-dark': #017887,
+  'teal': #019bae,
   // "teal-light": #64d5ca,
-    "teal-light": #3bbcc7,
+    'teal-light': #3bbcc7,
   // 'teal-lighter': #a0f0ed,
-    "teal-lighter": #c0f1f5,
-  "teal-lightest": #e8fffe,
-  "green-darkest": #0f2f21,
-  "green-darker": #1a4731,
-  "green-dark": #1f9d55,
-  "green": #11b776,
-  "green-light": #51d88a,
-  "green-lighter": #a2f5bf,
-  "green-lightest": #e3fcec,
-  "blue-darkest": #12283a,
-  "blue-darker": #1c3d5a,
-  "blue-dark": #2779bd,
-  "blue": #3490dc,
-  "blue-light": #6cb2eb,
-  "blue-lighter": #bcdefa,
-  "blue-lightest": #eff8ff,
-  "indigo-darkest": #191e38,
-  "indigo-darker": #2f365f,
-  "indigo-dark": #5661b3,
-  "indigo": #6574cd,
-  "indigo-light": #7886d7,
-  "indigo-lighter": #b2b7ff,
-  "indigo-lightest": #e6e8ff,
-  "purple-darkest": #21183c,
-  "purple-darker": #382b5f,
-  "purple-dark": #794acf,
-  "purple": #9561e2,
-  "purple-light": #a779e9,
-  "purple-lighter": #d6bbfc,
-  "purple-lightest": #f3ebff,
-  "pink-darkest": #451225,
-  "pink-darker": #6f213f,
-  "pink-dark": #eb5286,
-  "pink": #f66d9b,
-  "pink-light": #fa7ea8,
-  "pink-lighter": #ffbbca,
-  "pink-lightest": #ffebef
+    'teal-lighter': #c0f1f5,
+  'teal-lightest': #e8fffe,
+  'green-darkest': #0f2f21,
+  'green-darker': #1a4731,
+  'green-dark': #1f9d55,
+  'green': #11b776,
+  'green-light': #51d88a,
+  'green-lighter': #a2f5bf,
+  'green-lightest': #e3fcec,
+  'blue-darkest': #12283a,
+  'blue-darker': #1c3d5a,
+  'blue-dark': #2779bd,
+  'blue': #3490dc,
+  'blue-light': #6cb2eb,
+  'blue-lighter': #bcdefa,
+  'blue-lightest': #eff8ff,
+  'indigo-darkest': #191e38,
+  'indigo-darker': #2f365f,
+  'indigo-dark': #5661b3,
+  'indigo': #6574cd,
+  'indigo-light': #7886d7,
+  'indigo-lighter': #b2b7ff,
+  'indigo-lightest': #e6e8ff,
+  'purple-darkest': #21183c,
+  'purple-darker': #382b5f,
+  'purple-dark': #794acf,
+  'purple': #9561e2,
+  'purple-light': #a779e9,
+  'purple-lighter': #d6bbfc,
+  'purple-lightest': #f3ebff,
+  'pink-darkest': #451225,
+  'pink-darker': #6f213f,
+  'pink-dark': #eb5286,
+  'pink': #f66d9b,
+  'pink-light': #fa7ea8,
+  'pink-lighter': #ffbbca,
+  'pink-lightest': #ffebef
 );
 
 $border-styles: (
-  "solid": solid,
-  "dashed": dashed,
-  "dotted": dotted,
-  "none": none
+  'solid': solid,
+  'dashed': dashed,
+  'dotted': dotted,
+  'none': none
 );
 
 $border-width-default: 0.0625rem;
 $border-widths: (
-  "0": 0,
-  "1\\/8": 0.125rem,
-  "1\\/4": 0.25rem,
-  "1\\/2": 0.5rem,
-  "3\\/4": 0.75rem,
-  "1": 1rem
+  '0': 0,
+  '1\\/8': 0.125rem,
+  '1\\/4': 0.25rem,
+  '1\\/2': 0.5rem,
+  '3\\/4': 0.75rem,
+  '1': 1rem
 );
 
 $vertical-aligns: (
-  "baseline": baseline,
-  "top": top,
-  "middle": middle,
-  "bottom": bottom,
-  "text-top": text-top,
-  "text-bottom": text-bottom
+  'baseline': baseline,
+  'top': top,
+  'middle': middle,
+  'bottom': bottom,
+  'text-top': text-top,
+  'text-bottom': text-bottom
 );
 
 $text-aligns: (
-  "left": left,
-  "center": center,
-  "right": right,
-  "justify": justify
+  'left': left,
+  'center': center,
+  'right': right,
+  'justify': justify
 );
 
 $cursors: (
-  "auto": auto,
-  "default": default,
-  "pointer": pointer,
-  "wait": wait,
-  "move": move,
-  "not-allowed": not-allowed
+  'auto': auto,
+  'default': default,
+  'pointer': pointer,
+  'wait': wait,
+  'move': move,
+  'not-allowed': not-allowed
 );
 
 $text-decorations: (
-  "underline": underline,
-  "line-through": line-through,
-  "no-underline": none
+  'underline': underline,
+  'line-through': line-through,
+  'no-underline': none
 );
 
 $displays: (
-  "block": block,
-  "inline-block": inline-block,
-  "inline": inline,
-  "hidden": hidden,
-  "flex": flex,
-  "inline-flex": inline-flex
+  'block': block,
+  'inline-block': inline-block,
+  'inline': inline,
+  'hidden': hidden,
+  'flex': flex,
+  'inline-flex': inline-flex
 );
 
 $flex-directions: (
-  "row": row,
-  "row-reverse": row-reverse,
-  "col": column,
-  "col-reverse": column-reverse
+  'row': row,
+  'row-reverse': row-reverse,
+  'col': column,
+  'col-reverse': column-reverse
 );
 
 $flex-wraps: (
-  "no-wrap": nowrap,
-  "wrap": wrap,
-  "wrap-reverse": wrap-reverse
+  'no-wrap': nowrap,
+  'wrap': wrap,
+  'wrap-reverse': wrap-reverse
 );
 
 $align-items: (
-  "start": flex-start,
-  "center": center,
-  "end": flex-end,
-  "stretch": stretch,
-  "baseline": baseline
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'stretch': stretch,
+  'baseline': baseline
 );
 
 $align-contents: (
-  "start": flex-start,
-  "center": center,
-  "end": flex-end,
-  "stretch": stretch,
-  "between": space-between,
-  "around": space-around
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'stretch': stretch,
+  'between': space-between,
+  'around': space-around
 );
 
 $align-selfs: (
-  "auto": auto,
-  "start": flex-start,
-  "center": center,
-  "end": flex-end,
-  "stretch": stretch
+  'auto': auto,
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'stretch': stretch
 );
 
 $justify-contents: (
-  "start": flex-start,
-  "center": center,
-  "end": flex-end,
-  "between": space-between,
-  "around": space-around
+  'start': flex-start,
+  'center': center,
+  'end': flex-end,
+  'between': space-between,
+  'around': space-around
 );
 
 $flexs: (
-  "auto": 1 1 auto,
-  "initial": initial,
-  "1": 1 1 0%,
-  "2": 2 2 0%,
-  "3": 3 3 0%,
-  "none": none
+  'auto': 1 1 auto,
+  'initial': initial,
+  '1': 1 1 0%,
+  '2': 2 2 0%,
+  '3': 3 3 0%,
+  'none': none
 );
 
 $floats: (
-  "right": right,
-  "left": left,
-  "none": none
+  'right': right,
+  'left': left,
+  'none': none
 );
 
 $overflows: (
-  "auto": auto,
-  "hidden": hidden,
-  "visible": visible,
-  "scroll": scroll
+  'auto': auto,
+  'hidden': hidden,
+  'visible': visible,
+  'scroll': scroll
 );
 
 $pointer-events: (
-  "none": none,
-  "auto": auto
+  'none': none,
+  'auto': auto
 );
 
 $positions: (
-  "static": static,
-  "fixed": fixed,
-  "absolute": absolute,
-  "relative": relative
+  'static': static,
+  'fixed': fixed,
+  'absolute': absolute,
+  'relative': relative
 );
 
 $position-sizes: (
-  "0": 0,
-  "1\\/4": 0.25rem,
-  "1\\/2": 0.5rem,
-  "3\\/4": 0.75rem,
-  "1": 1rem,
-  "5\\/4": 1.25rem,
-  "3\\/2": 1.5rem,
-  "7\\/4": 1.75rem,
-  "2": 2rem,
-  "5\\/2": 2.5rem,
-  "3": 3rem,
-  "4": 4rem,
-  "auto": auto
+  '0': 0,
+  '1\\/4': 0.25rem,
+  '1\\/2': 0.5rem,
+  '3\\/4': 0.75rem,
+  '1': 1rem,
+  '5\\/4': 1.25rem,
+  '3\\/2': 1.5rem,
+  '7\\/4': 1.75rem,
+  '2': 2rem,
+  '5\\/2': 2.5rem,
+  '3': 3rem,
+  '4': 4rem,
+  'auto': auto
 );
 
 $font-styles: (
-  "italic": italic,
-  "normal": normal,
-  "oblique": oblique
+  'italic': italic,
+  'normal': normal,
+  'oblique': oblique
 );
 
 $text-transforms: (
-  "capitalize": capitalize,
-  "lowercase": lowercase,
-  "none": none,
-  "uppercase": uppercase
+  'capitalize': capitalize,
+  'lowercase': lowercase,
+  'none': none,
+  'uppercase': uppercase
 );
 
 $white-spaces: (
-  "normal": normal,
-  "no-wrap": nowrap,
-  "pre": pre,
-  "pre-line": pre-line,
-  "pre-wrap": pre-wrap
+  'normal': normal,
+  'no-wrap': nowrap,
+  'pre': pre,
+  'pre-line': pre-line,
+  'pre-wrap': pre-wrap
 );
 
 $opacities: (
-  "100": 1,
-  "75": 0.75,
-  "50": 0.5,
-  "25": 0.25,
-  "0": 0
+  '100': 1,
+  '75': 0.75,
+  '50': 0.5,
+  '25': 0.25,
+  '0': 0
 );
 
 $z-indexs: (
-  "0": 0,
-  "10": 10,
-  "20": 20,
-  "30": 30,
-  "40": 40,
-  "50": 50,
-  "auto": auto
+  '0': 0,
+  '10': 10,
+  '20': 20,
+  '30': 30,
+  '40': 40,
+  '50': 50,
+  'auto': auto
 );
 
 $font-sizes: (
-  "1\\/2": calc(1rem / 2),
-  "3\\/4": calc(3rem / 4),
-  "7\\/8": calc(7rem / 8),
-  "1": 1rem,
-  "5\\/4": calc(5rem / 4),
-  "3\\/2": calc(3rem / 2),
-  "7\\/4": calc(7rem / 4),
-  "2": 2rem,
-  "3": 3rem
+  '1\\/2': calc(1rem / 2),
+  '3\\/4': calc(3rem / 4),
+  '7\\/8': calc(7rem / 8),
+  '1': 1rem,
+  '5\\/4': calc(5rem / 4),
+  '3\\/2': calc(3rem / 2),
+  '7\\/4': calc(7rem / 4),
+  '2': 2rem,
+  '3': 3rem
 );
 
 $font-weights: (
-  "lightest": 100,
-  "lighter": 200,
-  "light": 300,
-  "normal": 400,
-  "bold": 600,
-  "bolder": 700,
-  "boldest": 800
+  'lightest': 100,
+  'lighter': 200,
+  'light': 300,
+  'normal': 400,
+  'bold': 600,
+  'bolder': 700,
+  'boldest': 800
 );
 
 $margins: (
-  "0": 0,
-  "1\\/5": calc(1rem / 5),
-  "1\\/4": calc(1rem / 4),
-  "1\\/3": calc(1rem / 3),
-  "2\\/5": calc(2rem / 5),
-  "1\\/2": calc(1rem / 2),
-  "3\\/5": calc(3rem / 5),
-  "2\\/3": calc(2rem / 3),
-  "3\\/4": calc(3rem / 4),
-  "4\\/5": calc(4rem / 5),
-  "1": 1rem,
-  "5\\/4": calc(5rem / 4),
-  "3\\/2": calc(3rem / 2),
-  "7\\/4": calc(7rem / 4),
-  "2": 2rem,
-  "5\\/2": calc(5rem / 2),
-  "3": 3rem,
-  "4": 4rem,
-  "auto": auto
+  '0': 0,
+  '1\\/5': calc(1rem / 5),
+  '1\\/4': calc(1rem / 4),
+  '1\\/3': calc(1rem / 3),
+  '2\\/5': calc(2rem / 5),
+  '1\\/2': calc(1rem / 2),
+  '3\\/5': calc(3rem / 5),
+  '2\\/3': calc(2rem / 3),
+  '3\\/4': calc(3rem / 4),
+  '4\\/5': calc(4rem / 5),
+  '1': 1rem,
+  '5\\/4': calc(5rem / 4),
+  '3\\/2': calc(3rem / 2),
+  '7\\/4': calc(7rem / 4),
+  '2': 2rem,
+  '5\\/2': calc(5rem / 2),
+  '3': 3rem,
+  '4': 4rem,
+  'auto': auto
 );
 
 $paddings: (
-  "0": 0,
-  "1\\/5": calc(1rem / 5),
-  "1\\/4": calc(1rem / 4),
-  "1\\/3": calc(1rem / 3),
-  "2\\/5": calc(2rem / 5),
-  "1\\/2": calc(1rem / 2),
-  "3\\/5": calc(3rem / 5),
-  "2\\/3": calc(2rem / 3),
-  "3\\/4": calc(3rem / 4),
-  "4\\/5": calc(4rem / 5),
-  "1": 1rem,
-  "5\\/4": calc(5rem / 4),
-  "3\\/2": calc(3rem / 2),
-  "7\\/4": calc(7rem / 4),
-  "2": 2rem,
-  "5\\/2": calc(5rem / 2),
-  "3": 3rem,
-  "4": 4rem,
-  "auto": auto
+  '0': 0,
+  '1\\/5': calc(1rem / 5),
+  '1\\/4': calc(1rem / 4),
+  '1\\/3': calc(1rem / 3),
+  '2\\/5': calc(2rem / 5),
+  '1\\/2': calc(1rem / 2),
+  '3\\/5': calc(3rem / 5),
+  '2\\/3': calc(2rem / 3),
+  '3\\/4': calc(3rem / 4),
+  '4\\/5': calc(4rem / 5),
+  '1': 1rem,
+  '5\\/4': calc(5rem / 4),
+  '3\\/2': calc(3rem / 2),
+  '7\\/4': calc(7rem / 4),
+  '2': 2rem,
+  '5\\/2': calc(5rem / 2),
+  '3': 3rem,
+  '4': 4rem,
+  'auto': auto
 );
 
 $line-heights: (
-  "1\\/2": 0.5rem,
-  "3\\/4": 0.75rem,
-  "1": 1rem,
-  "3\\/2": 1.5rem,
-  "2": 2rem,
-  "5\\/2": 2.5rem,
-  "3": 3rem
+  '1\\/2': 0.5rem,
+  '3\\/4': 0.75rem,
+  '1': 1rem,
+  '3\\/2': 1.5rem,
+  '2': 2rem,
+  '5\\/2': 2.5rem,
+  '3': 3rem
 );
 
 $border-radius-default: 0.25rem;
 $border-radius: (
-  "0": 0,
-  "1\\/2": 0.5rem,
-  "3\\/4": 0.75rem,
-  "1": 1rem,
-  "full": 9999px
+  '0': 0,
+  '1\\/2': 0.5rem,
+  '3\\/4': 0.75rem,
+  '1': 1rem,
+  'full': 9999px
 );
 
 $degres: (
-  "0": 0,
-  "90": 90,
-  "180": 180,
-  "270": 270
+  '0': 0,
+  '90': 90,
+  '180': 180,
+  '270': 270
 );
 
 $orders: (
-  "first": -1,
-  "last": 999,
-  "none": 0,
-  "1": 1,
-  "2": 2,
-  "3": 3,
-  "4": 4,
-  "5": 5
+  'first': -1,
+  'last': 999,
+  'none': 0,
+  '1': 1,
+  '2': 2,
+  '3': 3,
+  '4': 4,
+  '5': 5
 );
 
 $grows: (
-  "grow": 1,
-  "grow-none": 0
+  'grow': 1,
+  'grow-none': 0
 );
 
 $shrinks: (
-  "shrink": 1,
-  "shrink-none": 0
+  'shrink': 1,
+  'shrink-none': 0
 );
 
 $shadows: (
-  "large": "0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08)",
-  "larger": "0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08)",
-  "inner": "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-  "outline": "0 0 0 3px rgba(0, 0, 0, 0.1)",
-  "none": "none"
+  'large': '0 4px 8px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.08)',
+  'larger': '0 15px 30px 0 rgba(0, 0, 0, 0.11), 0 5px 15px 0 rgba(0, 0, 0, 0.08)',
+  'inner': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+  'outline': '0 0 0 3px rgba(0, 0, 0, 0.1)',
+  'none': 'none'
 );
 
-$breakpoints: ("576px", "768xp", "992px", "1200px", "1400px");
+$breakpoints: ('576px', '768xp', '992px', '1200px', '1400px');
 
 $heights: (
-  "0": 0,
-  "1\\/2": calc(1 * 100% / 2),
-  "1\\/3": calc(1 * 100% / 3),
-  "2\\/3": calc(2 * 100% / 3),
-  "1\\/4": calc(1 * 100% / 4),
-  "2\\/4": calc(2 * 100% / 4),
-  "3\\/4": calc(3 * 100% / 4),
-  "1\\/5": calc(1 * 100% / 5),
-  "2\\/5": calc(2 * 100% / 5),
-  "3\\/5": calc(3 * 100% / 5),
-  "4\\/5": calc(4 * 100% / 5),
-  "1\\/6": calc(1 * 100% / 6),
-  "2\\/6": calc(2 * 100% / 6),
-  "3\\/6": calc(3 * 100% / 6),
-  "4\\/6": calc(4 * 100% / 6),
-  "5\\/6": calc(5 * 100% / 6),
-  "1\\/12": calc(1 * 100% / 12),
-  "2\\/12": calc(2 * 100% / 12),
-  "3\\/12": calc(3 * 100% / 12),
-  "4\\/12": calc(4 * 100% / 12),
-  "5\\/12": calc(5 * 100% / 12),
-  "6\\/12": calc(6 * 100% / 12),
-  "7\\/12": calc(7 * 100% / 12),
-  "8\\/12": calc(8 * 100% / 12),
-  "9\\/12": calc(9 * 100% / 12),
-  "10\\/12": calc(10 * 100% / 12),
-  "11\\/12": calc(11 * 100% / 12),
-  "auto": auto,
-  "full": 100%,
-  "screen": 100vh,
+  '0': 0,
+  '1\\/2': calc(1 * 100% / 2),
+  '1\\/3': calc(1 * 100% / 3),
+  '2\\/3': calc(2 * 100% / 3),
+  '1\\/4': calc(1 * 100% / 4),
+  '2\\/4': calc(2 * 100% / 4),
+  '3\\/4': calc(3 * 100% / 4),
+  '1\\/5': calc(1 * 100% / 5),
+  '2\\/5': calc(2 * 100% / 5),
+  '3\\/5': calc(3 * 100% / 5),
+  '4\\/5': calc(4 * 100% / 5),
+  '1\\/6': calc(1 * 100% / 6),
+  '2\\/6': calc(2 * 100% / 6),
+  '3\\/6': calc(3 * 100% / 6),
+  '4\\/6': calc(4 * 100% / 6),
+  '5\\/6': calc(5 * 100% / 6),
+  '1\\/12': calc(1 * 100% / 12),
+  '2\\/12': calc(2 * 100% / 12),
+  '3\\/12': calc(3 * 100% / 12),
+  '4\\/12': calc(4 * 100% / 12),
+  '5\\/12': calc(5 * 100% / 12),
+  '6\\/12': calc(6 * 100% / 12),
+  '7\\/12': calc(7 * 100% / 12),
+  '8\\/12': calc(8 * 100% / 12),
+  '9\\/12': calc(9 * 100% / 12),
+  '10\\/12': calc(10 * 100% / 12),
+  '11\\/12': calc(11 * 100% / 12),
+  'auto': auto,
+  'inherit': inherit,
+  'full': 100%,
+  'screen': 100vh,
   //320px,
-  "xs": 20rem,
+  'xs': 20rem,
   //480px,
-  "sm": 30rem,
+  'sm': 30rem,
   //640px,
-  "md": 40rem,
+  'md': 40rem,
   //800px,
-  "lg": 50rem,
+  'lg': 50rem,
   //960px,
-  "xl": 60rem,
+  'xl': 60rem,
   //1120px,
-  "2xl": 70rem,
+  '2xl': 70rem,
   //1280px,
-  "3xl": 80rem,
+  '3xl': 80rem,
   //1440px,
-  "4xl": 90rem,
+  '4xl': 90rem,
   //1600px,
-  "5xl": 100rem,
+  '5xl': 100rem,
   //1760px,
-  "6xl": 100rem,
+  '6xl': 100rem,
   //1920px,
-  "7xl": 120rem
+  '7xl': 120rem
 );
 
 $widths: (
-  "0": 0,
-  "1\\/2": calc(1 * 100% / 2),
-  "1\\/3": calc(1 * 100% / 3),
-  "2\\/3": calc(2 * 100% / 3),
-  "1\\/4": calc(1 * 100% / 4),
-  "2\\/4": calc(2 * 100% / 4),
-  "3\\/4": calc(3 * 100% / 4),
-  "1\\/5": calc(1 * 100% / 5),
-  "2\\/5": calc(2 * 100% / 5),
-  "3\\/5": calc(3 * 100% / 5),
-  "4\\/5": calc(4 * 100% / 5),
-  "1\\/6": calc(1 * 100% / 6),
-  "2\\/6": calc(2 * 100% / 6),
-  "3\\/6": calc(3 * 100% / 6),
-  "4\\/6": calc(4 * 100% / 6),
-  "5\\/6": calc(5 * 100% / 6),
-  "1\\/12": calc(1 * 100% / 12),
-  "2\\/12": calc(2 * 100% / 12),
-  "3\\/12": calc(3 * 100% / 12),
-  "4\\/12": calc(4 * 100% / 12),
-  "5\\/12": calc(5 * 100% / 12),
-  "6\\/12": calc(6 * 100% / 12),
-  "7\\/12": calc(7 * 100% / 12),
-  "8\\/12": calc(8 * 100% / 12),
-  "9\\/12": calc(9 * 100% / 12),
-  "10\\/12": calc(10 * 100% / 12),
-  "11\\/12": calc(11 * 100% / 12),
-  "auto": auto,
-  "full": 100%,
-  "screen": 100vw,
+  '0': 0,
+  '1\\/2': calc(1 * 100% / 2),
+  '1\\/3': calc(1 * 100% / 3),
+  '2\\/3': calc(2 * 100% / 3),
+  '1\\/4': calc(1 * 100% / 4),
+  '2\\/4': calc(2 * 100% / 4),
+  '3\\/4': calc(3 * 100% / 4),
+  '1\\/5': calc(1 * 100% / 5),
+  '2\\/5': calc(2 * 100% / 5),
+  '3\\/5': calc(3 * 100% / 5),
+  '4\\/5': calc(4 * 100% / 5),
+  '1\\/6': calc(1 * 100% / 6),
+  '2\\/6': calc(2 * 100% / 6),
+  '3\\/6': calc(3 * 100% / 6),
+  '4\\/6': calc(4 * 100% / 6),
+  '5\\/6': calc(5 * 100% / 6),
+  '1\\/12': calc(1 * 100% / 12),
+  '2\\/12': calc(2 * 100% / 12),
+  '3\\/12': calc(3 * 100% / 12),
+  '4\\/12': calc(4 * 100% / 12),
+  '5\\/12': calc(5 * 100% / 12),
+  '6\\/12': calc(6 * 100% / 12),
+  '7\\/12': calc(7 * 100% / 12),
+  '8\\/12': calc(8 * 100% / 12),
+  '9\\/12': calc(9 * 100% / 12),
+  '10\\/12': calc(10 * 100% / 12),
+  '11\\/12': calc(11 * 100% / 12),
+  'auto': auto,
+  'inherit': inherit,
+  'full': 100%,
+  'screen': 100vw,
   //320px,
-  "xs": 20rem,
+  'xs': 20rem,
   //480px,
-  "sm": 30rem,
+  'sm': 30rem,
   //640px,
-  "md": 40rem,
+  'md': 40rem,
   //800px,
-  "lg": 50rem,
+  'lg': 50rem,
   //960px,
-  "xl": 60rem,
+  'xl': 60rem,
   //1120px,
-  "2xl": 70rem,
+  '2xl': 70rem,
   //1280px,
-  "3xl": 80rem,
+  '3xl': 80rem,
   //1440px,
-  "4xl": 90rem,
+  '4xl': 90rem,
   //1600px,
-  "5xl": 100rem,
+  '5xl': 100rem,
   //1760px,
-  "6xl": 100rem,
+  '6xl': 100rem,
   //1920px,
-  "7xl": 120rem
+  '7xl': 120rem
 );
 
 $table-collapse: (
-  "collapse": collapse,
-  "seperate": seperate
+  'collapse': collapse,
+  'seperate': seperate
 );
 
 $table-layout: (
-  "auto": auto,
-  "fixed": fixed
+  'auto': auto,
+  'fixed': fixed
 );
