@@ -1,0 +1,15 @@
+@import "variables";
+
+@each $name, $value in $opacities {
+  .opacity\:#{$name} {
+    opacity: $value;
+  }
+}
+
+@each $variantName, $variantValue in $variants {
+  @each $name, $value in $opacities {
+    .#{$variantName}\:opacity\:#{$name}:#{$variantValue} {
+      opacity: $value;
+    }
+  }
+}

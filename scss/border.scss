@@ -4,18 +4,14 @@
   .border\:#{$name} {
     border-color: $value;
   }
-  .hover\:border\:#{$name}:hover {
-    border-color: $value;
-  }
-  .focus\:border\:#{$name}:focus {
-    border-color: $value;
-  }
 }
 
-*,
-:after,
-:before {
-  border: 0 solid map-get($colors, "grey-light");
+@each $variantName, $variantValue in $variants {
+  @each $name, $value in $colors {
+    .#{$variantName}\:border\:#{$name}:#{$variantValue} {
+      border-color: $value;
+    }
+  }
 }
 
 @each $name, $value in $border-styles {
