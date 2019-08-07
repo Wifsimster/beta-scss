@@ -1,0 +1,15 @@
+@import "variables";
+
+@each $name, $value in $colors {
+  .text\:#{$name} {
+    color: $value;
+  }
+}
+
+@each $variantName, $variantValue in $variants {
+  @each $name, $value in $colors {
+    .#{$variantName}\:text\:#{$name}:#{$variantValue} {
+      color: $value;
+    }
+  }
+}

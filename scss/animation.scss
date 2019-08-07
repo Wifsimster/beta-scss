@@ -1,0 +1,40 @@
+@import "variables";
+
+@each $name, $value in $degres {
+  .rotate\:#{$name} {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: rotate(#{$value}deg);
+  }
+}
+
+@each $variantName, $variantValue in $variants {
+  @each $name, $value in $opacities {
+    .#{$variantName}\:rotate\:#{$name}:#{$variantValue} {
+      display: inline-block;
+      transition: all 0.3s ease;
+      transform: rotate(#{$value}deg);
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  display: inline-block;
+  animation: rotating 2s linear infinite;
+}
+
+@each $variantName, $variantValue in $variants {
+  .#{$variantName}\:rotating:#{$variantValue} {
+    display: inline-block;
+    animation: rotating 2s linear infinite;
+  }
+}

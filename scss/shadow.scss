@@ -1,0 +1,23 @@
+@import "variables";
+
+.shadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+@each $name, $value in $shadows {
+  .shadow\:#{$name} {
+    box-shadow: #{$value};
+  }
+}
+
+@each $variantName, $variantValue in $variants {
+  .#{$variantName}\:shadow:#{$variantValue} {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  @each $name, $value in $shadows {
+    .#{$variantName}\:shadow\:#{$name}:#{$variantValue} {
+      box-shadow: $value;
+    }
+  }
+}

@@ -3,6 +3,11 @@
   "version": "1.2.3",
   "description": "Minimalistic utility SCSS kit for developer",
   "main": "dist/style.js",
+  "scripts": {
+    "dev": "webpack --config webpack.config.js --mode development",
+    "prod": "webpack --config webpack.config.js --mode production",
+    "publish": "npm publish"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^2.0.2",
     "css-loader": "^2.1.1",
@@ -11,11 +16,6 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
-  },
-  "scripts": {
-    "dev": "webpack --config webpack.config.js --mode development",
-    "prod": "webpack --config webpack.config.js --mode production",
-    "publish": "npm publish"
   },
   "repository": {
     "type": "git",
