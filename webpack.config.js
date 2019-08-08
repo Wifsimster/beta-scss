@@ -1,23 +1,23 @@
-const path = require('path')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const path = require("path")
+const CleanWebpackPlugin = require("clean-webpack-plugin")
 
 module.exports = {
-  entry: [path.resolve('scss/_global.scss')],
+  entry: [path.resolve("scss/global.scss")],
   output: {
-    filename: 'style.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: 'dist/',
+    filename: "style.js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "dist/",
     pathinfo: false
   },
   resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules']
+    modules: [path.join(__dirname, "src"), "node_modules"]
   },
   plugins: [new CleanWebpackPlugin()],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   }
