@@ -72,7 +72,8 @@
 }
 
 // Build media queries for differents columns grid (4, 6, 8, 10, 12) by reference to 1920px width screen
-@each $columns in (4, 6, 8, 10, 12) {
+// customize by defining $responsive-columns variable before beta-scss import
+@each $columns in $responsive-columns {
   @for $i from $columns through 1 {
     @media (max-width: #{$i * 1920px / $columns}) {
       .responsive\:#{$columns} > div {

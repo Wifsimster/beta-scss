@@ -522,3 +522,6 @@ $variants: (
   "odd": nth-child(odd),
   "even": nth-child(even)
 );
+
+// user overridable variables
+$responsive-columns: 4, 6, 8, 10, 12 !default;
