@@ -55,5 +55,21 @@
     .#{$variantName}\:rounded\:#{$name}:#{$variantValue} {
       border-radius: #{$value};
     }
+    .#{$variantName}\:rounded\:t\:#{$name}:#{$variantValue} {
+      border-top-left-radius: #{$value};
+      border-top-right-radius: #{$value};
+    }
+    .#{$variantName}\:rounded\:r\:#{$name}:#{$variantValue} {
+      border-top-right-radius: #{$value};
+      border-bottom-right-radius: #{$value};
+    }
+    .#{$variantName}\:rounded\:b\:#{$name}:#{$variantValue} {
+      border-bottom-left-radius: #{$value};
+      border-bottom-right-radius: #{$value};
+    }
+    .#{$variantName}\:rounded\:l\:#{$name}:#{$variantValue} {
+      border-top-left-radius: #{$value};
+      border-bottom-left-radius: #{$value};
+    }
   }
 }
