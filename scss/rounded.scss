@@ -28,6 +28,36 @@
   border-radius: map-get($border-radius, "full");
 }
 
+@each $variantName, $variantValue in $variants {
+  .#{$variantName}\:rounded:#{$variantValue} {
+    border-radius: $border-radius-default;
+  }
+
+  .#{$variantName}\:rounded\:t:#{$variantValue} {
+    border-top-left-radius: $border-radius-default;
+    border-top-right-radius: $border-radius-default;
+  }
+
+  .#{$variantName}\:rounded\:r:#{$variantValue} {
+    border-top-right-radius: $border-radius-default;
+    border-bottom-right-radius: $border-radius-default;
+  }
+
+  .#{$variantName}\:rounded\:b:#{$variantValue} {
+    border-bottom-left-radius: $border-radius-default;
+    border-bottom-right-radius: $border-radius-default;
+  }
+
+  .#{$variantName}\:rounded\:l:#{$variantValue} {
+    border-top-left-radius: $border-radius-default;
+    border-bottom-left-radius: $border-radius-default;
+  }
+
+  .#{$variantName}\:rounded\:full:#{$variantValue} {
+    border-radius: map-get($border-radius, "full");
+  }
+}
+
 @each $name, $value in $border-radius {
   .rounded\:#{$name} {
     border-radius: #{$value};
