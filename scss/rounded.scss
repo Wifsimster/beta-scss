@@ -49,3 +49,11 @@
     border-bottom-left-radius: #{$value};
   }
 }
+
+@each $variantName, $variantValue in $variants {
+  @each $name, $value in $border-radius {
+    .#{$variantName}\:rounded\:#{$name}:#{$variantValue} {
+      border-radius: #{$value};
+    }
+  }
+}
