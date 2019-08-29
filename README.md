@@ -16,8 +16,20 @@ $ npm install beta-scss
 
 ## Usage
 
+You can basically use it as an import :
+
 ```js
 import `beta-scss`
+```
+Or, you can use the `global.scss`, which contains all variables :
+
+```scss
+@import "~beta-scss/packages/global"
+
+// Define a color from the beta-scss palette
+.blue {
+ color: map-get($colors, "blue")
+}
 ```
 
 ## [Documentation](https://wifsimster.github.io/beta-scss-documentation)
