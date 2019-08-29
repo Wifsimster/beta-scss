@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline-color: transparent;
+}
+
 blockquote,
 dl,
 dd,

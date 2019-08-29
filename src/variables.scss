@@ -514,15 +514,15 @@ $table-layout: (
 );
 
 $variants: (
-  "active": active,
-  "visited": visited,
-  "hover": hover,
+  // "active": active,
+    // "visited": visited,
+    "hover": hover,
   "disabled": disabled,
   "focus": focus,
   "first": first-child,
   "last": last-child,
-  "odd": nth-child(odd),
-  "even": nth-child(even)
+  // "odd": nth-child(odd),
+    // "even": nth-child(even)
 );
 
 // user overridable variables
