@@ -514,14 +514,14 @@ $table-layout: (
 );
 
 $variants: (
-  // "active": active,
-    // "visited": visited,
-    "hover": hover,
+  "hover": hover,
   "disabled": disabled,
   "focus": focus,
   "first": first-child,
   "last": last-child,
-  // "odd": nth-child(odd),
+  // "active": active,
+    // "visited": visited,
+    // "odd": nth-child(odd),
     // "even": nth-child(even)
 );
 
