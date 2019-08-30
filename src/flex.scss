@@ -64,7 +64,7 @@
 @each $bpName, $bpValue in $breakpoints {
   @each $name, $value in $widths {
     @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:w\:#{$name} {
+      .#{$bpName}\:flex\:#{$name} {
         flex-basis: $value;
       }
     }
