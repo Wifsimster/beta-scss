@@ -1,0 +1,24 @@
+@import "variables";
+
+// Responsive grid
+[class^="responsive\:"],
+[class*="responsive\:"] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  > div {
+    position: relative;
+  }
+}
+
+// Build media queries for differents columns grid (4, 6, 8, 10, 12) by reference to 1920px width screen
+// customize by defining $responsive-columns variable before beta-scss import
+@each $columns in $responsive-columns {
+  @for $i from $columns through 1 {
+    @media (max-width: #{$i * 1920px / $columns}) {
+      .responsive\:#{$columns} > div {
+        flex-basis: #{100% / $i};
+      }
+    }
+  }
+}

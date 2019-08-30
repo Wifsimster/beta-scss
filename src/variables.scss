@@ -389,8 +389,6 @@ $shadows: (
   "none": "none"
 );
 
-$breakpoints: ("576px", "768xp", "992px", "1200px", "1400px");
-
 $heights: (
   "0": 0,
   "1\\/2": calc(1 * 100% / 2),
@@ -423,6 +421,8 @@ $heights: (
   "inherit": inherit,
   "full": 100%,
   "screen": 100vh,
+  //160px,
+  "2xs": 10rem,
   //320px,
   "xs": 20rem,
   //480px,
@@ -442,7 +442,7 @@ $heights: (
   //1600px,
   "5xl": 100rem,
   //1760px,
-  "6xl": 100rem,
+  "6xl": 110rem,
   //1920px,
   "7xl": 120rem
 );
@@ -478,28 +478,21 @@ $widths: (
   "auto": auto,
   "inherit": inherit,
   "full": 100%,
-  "screen": 100vw,
-  //320px,
+  "screen": 100vw
+);
+
+$breakpoints: (
+  "2xs": 10rem,
   "xs": 20rem,
-  //480px,
   "sm": 30rem,
-  //640px,
   "md": 40rem,
-  //800px,
   "lg": 50rem,
-  //960px,
   "xl": 60rem,
-  //1120px,
   "2xl": 70rem,
-  //1280px,
   "3xl": 80rem,
-  //1440px,
   "4xl": 90rem,
-  //1600px,
   "5xl": 100rem,
-  //1760px,
-  "6xl": 100rem,
-  //1920px,
+  "6xl": 110rem,
   "7xl": 120rem
 );
 

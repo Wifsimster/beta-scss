@@ -1,5 +1,6 @@
 @import "variables";
 
+// ie : max-h:10/12
 @each $name, $value in $heights {
   .h\:#{$name} {
     height: $value;
@@ -9,5 +10,29 @@
   }
   .max-h\:#{$name} {
     max-height: $value;
+  }
+}
+
+// ie : max-h:sm
+@each $name, $value in $breakpoints {
+  .h\:#{$name} {
+    height: $value;
+  }
+  .min-h\:#{$name} {
+    min-height: $value;
+  }
+  .max-h\:#{$name} {
+    max-height: $value;
+  }
+}
+
+// ie : sm:max-h:1/4
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $heights {
+    @media (max-height: #{$bpValue}) {
+      .#{$bpName}\:h\:#{$name} {
+        height: $value;
+      }
+    }
   }
 }
