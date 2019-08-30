@@ -26,13 +26,14 @@
   }
 }
 
+// Disable, since i don't use media queries on heights
 // ie : sm:max-h:1/4
-@each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $heights {
-    @media (max-height: #{$bpValue}) {
-      .#{$bpName}\:h\:#{$name} {
-        height: $value;
-      }
-    }
-  }
-}
+// @each $bpName, $bpValue in $breakpoints {
+//   @each $name, $value in $heights {
+//     @media (min-height: #{$bpValue}) {
+//       .#{$bpName}\:h\:#{$name} {
+//         height: $value;
+//       }
+//     }
+//   }
+// }
