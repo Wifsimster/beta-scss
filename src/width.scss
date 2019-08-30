@@ -27,12 +27,12 @@
 }
 
 // ie : sm:max-w:1/4
-@each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $widths {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:w\:#{$name} {
-        width: $value;
-      }
-    }
-  }
-}
+// @each $bpName, $bpValue in $breakpoints {
+//   @each $name, $value in $widths {
+//     @media (min-width: #{$bpValue}) {
+//       .#{$bpName}\:w\:#{$name} {
+//         width: $value;
+//       }
+//     }
+//   }
+// }

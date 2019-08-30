@@ -59,3 +59,14 @@
     flex-shrink: $value;
   }
 }
+
+// ie : sm:flex:1/4
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $widths {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:w\:#{$name} {
+        flex-basis: $value;
+      }
+    }
+  }
+}
