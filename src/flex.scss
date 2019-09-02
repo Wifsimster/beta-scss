@@ -60,9 +60,18 @@
   }
 }
 
-// ie : sm:flex:1/4
+// Responsive flex items
+
+// ie : flex:1/12
+@each $name, $value in $twelve-columns {
+  .flex\:#{$name} {
+    flex-basis: $value;
+  }
+}
+
+// ie : sm:flex:3/12
 @each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $widths {
+  @each $name, $value in $twelve-columns {
     @media (min-width: #{$bpValue}) {
       .#{$bpName}\:flex\:#{$name} {
         flex-basis: $value;

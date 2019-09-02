@@ -1,6 +1,6 @@
 @import "variables";
 
-// ie : max-w:10/12
+// ie : min-w:0
 @each $name, $value in $widths {
   .w\:#{$name} {
     width: $value;
@@ -26,13 +26,15 @@
   }
 }
 
-// ie : sm:max-w:1/4
-// @each $bpName, $bpValue in $breakpoints {
-//   @each $name, $value in $widths {
-//     @media (min-width: #{$bpValue}) {
-//       .#{$bpName}\:w\:#{$name} {
-//         width: $value;
-//       }
-//     }
-//   }
-// }
+// ie: w:2/12
+@each $name, $value in $twelve-columns {
+  .w\:#{$name} {
+    width: $value;
+  }
+  .min-w\:#{$name} {
+    min-width: $value;
+  }
+  .max-w\:#{$name} {
+    max-width: $value;
+  }
+}

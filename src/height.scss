@@ -1,6 +1,6 @@
 @import "variables";
 
-// ie : max-h:10/12
+// ie : min-h:0
 @each $name, $value in $heights {
   .h\:#{$name} {
     height: $value;
@@ -15,6 +15,19 @@
 
 // ie : max-h:sm
 @each $name, $value in $breakpoints {
+  .h\:#{$name} {
+    height: $value;
+  }
+  .min-h\:#{$name} {
+    min-height: $value;
+  }
+  .max-h\:#{$name} {
+    max-height: $value;
+  }
+}
+
+// ie: h:2/12
+@each $name, $value in $twelve-columns {
   .h\:#{$name} {
     height: $value;
   }
