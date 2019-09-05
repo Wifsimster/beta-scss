@@ -27,7 +27,7 @@
 }
 
 @each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $displays {
+  @each $name, $value in $margins {
     .#{$bpName}\:m\:#{$name} {
       @media (min-width: #{$bpValue}) {
         margin: $value;
