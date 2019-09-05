@@ -25,3 +25,33 @@
     padding-right: $value;
   }
 }
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $displays {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:p\:#{$name} {
+        padding: $value;
+      }
+      .#{$bpName}\:pt\:#{$name} {
+        padding-top: $value;
+      }
+      .#{$bpName}\:pr\:#{$name} {
+        padding-right: $value;
+      }
+      .#{$bpName}\:pb\:#{$name} {
+        padding-bottom: $value;
+      }
+      .#{$bpName}\:pl\:#{$name} {
+        padding-left: $value;
+      }
+      .#{$bpName}\:px\:#{$name} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
+      .#{$bpName}\:py\:#{$name} {
+        padding-left: $value;
+        padding-right: $value;
+      }
+    }
+  }
+}

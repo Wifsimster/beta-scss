@@ -25,3 +25,33 @@
     margin-right: $value;
   }
 }
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $displays {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:m\:#{$name} {
+        margin: $value;
+      }
+      .#{$bpName}\:mt\:#{$name} {
+        margin-top: $value;
+      }
+      .#{$bpName}\:mr\:#{$name} {
+        margin-right: $value;
+      }
+      .#{$bpName}\:mb\:#{$name} {
+        margin-bottom: $value;
+      }
+      .#{$bpName}\:ml\:#{$name} {
+        margin-left: $value;
+      }
+      .#{$bpName}\:mx\:#{$name} {
+        margin-top: $value;
+        margin-bottom: $value;
+      }
+      .#{$bpName}\:my\:#{$name} {
+        margin-left: $value;
+        margin-right: $value;
+      }
+    }
+  }
+}
