@@ -28,3 +28,48 @@
     left: $value;
   }
 }
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $positions {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:#{$name} {
+        position: $value;
+      }
+    }
+  }
+
+  @each $name, $value in $position-sizes {
+    .#{$bpName}\:t\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        top: $value;
+      }
+    }
+    .#{$bpName}\:r\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        right: $value;
+      }
+    }
+    .#{$bpName}\:b\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        bottom: $value;
+      }
+    }
+    .#{$bpName}\:l\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        left: $value;
+      }
+    }
+    .#{$bpName}\:x\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        top: $value;
+        bottom: $value;
+      }
+    }
+    .#{$bpName}\:y\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        right: $value;
+        left: $value;
+      }
+    }
+  }
+}
