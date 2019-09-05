@@ -69,12 +69,36 @@
   }
 }
 
-// ie : sm:flex:3/12
 @each $bpName, $bpValue in $breakpoints {
+  // ie : sm:flex:3/12
   @each $name, $value in $twelve-columns {
     @media (min-width: #{$bpValue}) {
       .#{$bpName}\:flex\:#{$name} {
         flex-basis: $value;
+      }
+    }
+  }
+
+  @each $name, $value in $align-items {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:items\:#{$name} {
+        align-items: $value;
+      }
+    }
+  }
+
+  @each $name, $value in $align-contents {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:content\:#{$name} {
+        align-content: $value;
+      }
+    }
+  }
+
+  @each $name, $value in $justify-contents {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:justify\:#{$name} {
+        justify-content: $value;
       }
     }
   }
