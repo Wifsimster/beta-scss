@@ -28,27 +28,39 @@
 
 @each $bpName, $bpValue in $breakpoints {
   @each $name, $value in $displays {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:p\:#{$name} {
+    .#{$bpName}\:p\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding: $value;
       }
-      .#{$bpName}\:pt\:#{$name} {
+    }
+    .#{$bpName}\:pt\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-top: $value;
       }
-      .#{$bpName}\:pr\:#{$name} {
+    }
+    .#{$bpName}\:pr\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-right: $value;
       }
-      .#{$bpName}\:pb\:#{$name} {
+    }
+    .#{$bpName}\:pb\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-bottom: $value;
       }
-      .#{$bpName}\:pl\:#{$name} {
+    }
+    .#{$bpName}\:pl\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-left: $value;
       }
-      .#{$bpName}\:px\:#{$name} {
+    }
+    .#{$bpName}\:px\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-top: $value;
         padding-bottom: $value;
       }
-      .#{$bpName}\:py\:#{$name} {
+    }
+    .#{$bpName}\:py\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         padding-left: $value;
         padding-right: $value;
       }

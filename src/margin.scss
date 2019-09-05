@@ -28,27 +28,39 @@
 
 @each $bpName, $bpValue in $breakpoints {
   @each $name, $value in $displays {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:m\:#{$name} {
+    .#{$bpName}\:m\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin: $value;
       }
-      .#{$bpName}\:mt\:#{$name} {
+    }
+    .#{$bpName}\:mt\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-top: $value;
       }
-      .#{$bpName}\:mr\:#{$name} {
+    }
+    .#{$bpName}\:mr\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-right: $value;
       }
-      .#{$bpName}\:mb\:#{$name} {
+    }
+    .#{$bpName}\:mb\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-bottom: $value;
       }
-      .#{$bpName}\:ml\:#{$name} {
+    }
+    .#{$bpName}\:ml\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-left: $value;
       }
-      .#{$bpName}\:mx\:#{$name} {
+    }
+    .#{$bpName}\:mx\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-top: $value;
         margin-bottom: $value;
       }
-      .#{$bpName}\:my\:#{$name} {
+    }
+    .#{$bpName}\:my\:#{$name} {
+      @media (min-width: #{$bpValue}) {
         margin-left: $value;
         margin-right: $value;
       }
