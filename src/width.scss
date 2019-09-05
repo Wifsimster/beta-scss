@@ -38,3 +38,23 @@
     max-width: $value;
   }
 }
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $widths {
+    .#{$bpName}\:w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        width: $value;
+      }
+    }
+    .#{$bpName}\:min-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        min-width: $value;
+      }
+    }
+    .#{$bpName}\:max-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        max-width: $value;
+      }
+    }
+  }
+}
