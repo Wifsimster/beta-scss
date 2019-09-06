@@ -9,7 +9,7 @@
 }
 
 @each $variantName, $variantValue in $variants {
-  @each $name, $value in $opacities {
+  @each $name, $value in $degres {
     .#{$variantName}\:rotate\:#{$name}:#{$variantValue} {
       display: inline-block;
       transition: all 0.3s ease;
