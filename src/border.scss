@@ -36,10 +36,12 @@
   border-left-width: $border-width-default;
 }
 .border\:x {
-  border-left-width: $border-width-default;
+  border-top-width: $border-width-default;
+  border-bottom-width: $border-width-default;
 }
 .border\:y {
   border-left-width: $border-width-default;
+  border-right-width: $border-width-default;
 }
 
 @each $name, $value in $border-widths {
