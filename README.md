@@ -32,4 +32,4 @@ Or, you can use the `global.scss`, which contains all variables :
 }
 ```
 
-# [Documentation](https://wifsimster.github.io/beta-scss-documentation)
+# [See documentation](https://wifsimster.github.io/beta-scss-documentation)
