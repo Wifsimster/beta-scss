@@ -57,4 +57,40 @@
       }
     }
   }
+
+  @each $name, $value in $breakpoints {
+    .#{$bpName}\:w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        width: $value;
+      }
+    }
+    .#{$bpName}\:min-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        min-width: $value;
+      }
+    }
+    .#{$bpName}\:max-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        max-width: $value;
+      }
+    }
+  }
+
+  @each $name, $value in $twelve-columns {
+    .#{$bpName}\:w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        width: $value;
+      }
+    }
+    .#{$bpName}\:min-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        min-width: $value;
+      }
+    }
+    .#{$bpName}\:max-w\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        max-width: $value;
+      }
+    }
+  }
 }
