@@ -17,7 +17,7 @@
 
   @each $name, $value in $shadows {
     .#{$variantName}\:shadow\:#{$name}:#{$variantValue} {
-      box-shadow: $value;
+      box-shadow: #{$value};
     }
   }
 }
