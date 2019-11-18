@@ -1,7 +1,17 @@
-.visible {
-  visibility: visible;
+@import "variables";
+
+@each $name, $value in $visibles {
+  .#{$name} {
+    visibility: $value;
+  }
 }
 
-.invisible {
-  visibility: hidden;
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $visibles {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:#{$name} {
+        visibility: $value;
+      }
+    }
+  }
 }
