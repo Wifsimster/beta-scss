@@ -20,12 +20,12 @@
     left: $value;
   }
   .x\:#{$name} {
-    top: $value;
-    bottom: $value;
-  }
-  .y\:#{$name} {
     right: $value;
     left: $value;
+  }
+  .y\:#{$name} {
+    top: $value;
+    bottom: $value;
   }
 }
 
@@ -61,14 +61,14 @@
     }
     .#{$bpName}\:x\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        top: $value;
-        bottom: $value;
+        right: $value;
+        left: $value;
       }
     }
     .#{$bpName}\:y\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        right: $value;
-        left: $value;
+        top: $value;
+        bottom: $value;
       }
     }
   }

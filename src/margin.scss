@@ -17,12 +17,12 @@
     margin-left: $value;
   }
   .mx\:#{$name} {
-    margin-top: $value;
-    margin-bottom: $value;
-  }
-  .my\:#{$name} {
     margin-left: $value;
     margin-right: $value;
+  }
+  .my\:#{$name} {
+    margin-top: $value;
+    margin-bottom: $value;
   }
 }
 
@@ -55,14 +55,14 @@
     }
     .#{$bpName}\:mx\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        margin-top: $value;
-        margin-bottom: $value;
+        margin-left: $value;
+        margin-right: $value;
       }
     }
     .#{$bpName}\:my\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        margin-left: $value;
-        margin-right: $value;
+        margin-top: $value;
+        margin-bottom: $value;
       }
     }
   }

@@ -17,12 +17,12 @@
     padding-left: $value;
   }
   .px\:#{$name} {
-    padding-top: $value;
-    padding-bottom: $value;
-  }
-  .py\:#{$name} {
     padding-left: $value;
     padding-right: $value;
+  }
+  .py\:#{$name} {
+    padding-top: $value;
+    padding-bottom: $value;
   }
 }
 
@@ -55,14 +55,14 @@
     }
     .#{$bpName}\:px\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        padding-top: $value;
-        padding-bottom: $value;
+        padding-left: $value;
+        padding-right: $value;
       }
     }
     .#{$bpName}\:py\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        padding-left: $value;
-        padding-right: $value;
+        padding-top: $value;
+        padding-bottom: $value;
       }
     }
   }

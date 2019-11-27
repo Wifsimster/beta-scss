@@ -36,12 +36,12 @@
   border-left-width: $border-width-default;
 }
 .border\:x {
-  border-top-width: $border-width-default;
-  border-bottom-width: $border-width-default;
-}
-.border\:y {
   border-left-width: $border-width-default;
   border-right-width: $border-width-default;
+}
+.border\:y {
+  border-top-width: $border-width-default;
+  border-bottom-width: $border-width-default;
 }
 
 @each $name, $value in $border-widths {
@@ -61,11 +61,11 @@
     border-left-width: $value;
   }
   .border\:x\:#{$name} {
-    border-top-width: $value;
-    border-bottom-width: $value;
-  }
-  .border\:y\:#{$name} {
     border-right-width: $value;
     border-left-width: $value;
+  }
+  .border\:y\:#{$name} {
+    border-top-width: $value;
+    border-bottom-width: $value;
   }
 }
