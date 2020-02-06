@@ -18,21 +18,24 @@
   @for $i from $columns through 1 {
     @media (min-width: #{$i * $factor}) and (max-width: #{(($i + 1) * $factor) - 1}) {
       .responsive\:#{$columns} {
-        padding: 5px;
-
         & > div {
           flex-basis: #{100% / $i};
         }
+      }
+    }
+  }
 
-        // Generate gutters for responsive columns
-        @each $name, $value in $paddings {
-          &.column-gap\:#{$name} > div {
-            margin: 0 $value 0 0;
-          }
-          &.row-gap\:#{$name} > div {
-            margin: 0 0 $value 0;
-          }
-        }
+  // Generate gutters for responsive columns
+  @each $name, $value in $paddings {
+    div[class^="responsive"] {
+      &.column-gap\:#{$name} > div {
+        margin-left: $value;
+        margin-right: $value;
+      }
+
+      &.row-gap\:#{$name} > div {
+        margin-top: $value;
+        margin-bottom: $value;
       }
     }
   }
