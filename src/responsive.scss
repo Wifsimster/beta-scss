@@ -24,27 +24,25 @@
       }
     }
   }
+}
 
-  // Generate gutters for responsive columns
-  @each $name, $value in $paddings {
-    div[class^="responsive"] {
-
-      &.column-gap\:#{$name} {        
-        margin-left: -$value;
-        margin-right: -$value;
-        & > div {
-          margin-left: $value;
-          margin-right: $value;
-        }
+// Generate gutters for responsive columns
+@each $name, $value in $paddings {
+  div[class^="responsive"] {
+    &.column-gap\:#{$name} {        
+      margin-left: -$value;
+      margin-right: -$value;
+      & > div {
+        margin-left: $value;
+        margin-right: $value;
+      }
     }
-
-      &.row-gap\:#{$name} {
-        margin-top: -$value;
-        margin-bottom: -$value;
-        & > div {
-          margin-top: $value;
-          margin-bottom: $value;
-        }
+    &.row-gap\:#{$name} {
+      margin-top: -$value;
+      margin-bottom: -$value;
+      & > div {
+        margin-top: $value;
+        margin-bottom: $value;
       }
     }
   }
