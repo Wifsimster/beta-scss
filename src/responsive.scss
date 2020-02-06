@@ -19,7 +19,7 @@
     @media (min-width: #{$i * $factor}) and (max-width: #{(($i + 1) * $factor) - 1}) {
       .responsive\:#{$columns} {
         & > div {
-          flex-basis: #{100% / $i};
+          flex-basis: #{100% / $i * 2};
         }
       }
     }
