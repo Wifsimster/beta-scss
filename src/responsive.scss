@@ -30,16 +30,17 @@
 @each $name, $value in $paddings {
   div[class^="responsive"] {
     &.column-gap\:#{$name} {        
-      margin-left: -$value;
-      margin-right: -$value;
+      margin-left: $value * -1;
+      margin-right: $value * -1;
       & > div {
         margin-left: $value;
         margin-right: $value;
       }
     }
+
     &.row-gap\:#{$name} {
-      margin-top: -$value;
-      margin-bottom: -$value;
+      margin-top: $value * -1;
+      margin-bottom: $value * -1;
       & > div {
         margin-top: $value;
         margin-bottom: $value;
