@@ -30,8 +30,8 @@
 @each $name, $value in $paddings {
   div[class^="responsive"] {
     &.column-gap\:#{$name} {        
-      margin-left: calc($value * -1);
-      margin-right: calc($value * -1);
+      margin-left: calc(#{$value} * -1);
+      margin-right: calc(#{$value} * -1);
       & > div {
         margin-left: $value;
         margin-right: $value;
@@ -39,8 +39,8 @@
     }
 
     &.row-gap\:#{$name} {
-      margin-top: calc($value * -1);
-      margin-bottom: calc($value * -1);
+      margin-top: calc(#{$value} * -1);
+      margin-bottom: calc(#{$value} * -1);
       & > div {
         margin-top: $value;
         margin-bottom: $value;
