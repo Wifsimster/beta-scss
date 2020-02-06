@@ -29,9 +29,7 @@
 // Generate gutters for responsive columns
 @each $name, $value in $paddings {
   div[class^="responsive"] {
-    &.column-gap\:#{$name} {        
-      // margin-left: calc(#{$value} * -1);
-      // margin-right: calc(#{$value} * -1);
+    &.column-gap\:#{$name} {
       & > div {
         padding-left: $value;
         padding-right: $value;
@@ -39,8 +37,6 @@
     }
 
     &.row-gap\:#{$name} {
-      // margin-top: calc(#{$value} * -1);
-      // margin-bottom: calc(#{$value} * -1);
       & > div {
         padding-top: $value;
         padding-bottom: $value;
