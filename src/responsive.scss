@@ -35,7 +35,6 @@
       & > div {
         padding-left: $value;
         padding-right: $value;
-        flex-basis: #{100% / $i};
       }
     }
 
