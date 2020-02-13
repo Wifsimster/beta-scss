@@ -25,4 +25,17 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
   }
+  .arrow\:l\:#{$name}::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: -10px;
+    top: calc(50% - 10px);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 0 solid transparent;
+    border-right: 10px solid $value;
+  }
 }
