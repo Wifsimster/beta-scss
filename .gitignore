@@ -1,3 +1,5 @@
-.sass-cache/
-node_modules/
-.git
+dist
+node_modules
+stats.json
+package-lock.json
+*.tgz
