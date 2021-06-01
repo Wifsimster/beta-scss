@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import "variables";
 
 // Responsive grid
@@ -14,12 +16,12 @@
 // Build media queries for differents columns grid (4, 6, 8, 10, 12) by reference to 1920px width screen
 // customize by defining $responsive-columns variable before beta-scss import
 @each $columns in $responsive-columns {
-  $factor: 1920px / $columns;
+  $factor: math.div(1920px, $columns);
   @for $i from $columns through 1 {
     @media (min-width: #{$i * $factor}) and (max-width: #{(($i + 1) * $factor) - 1}) {
       .responsive\:#{$columns} {
         & > div {
-          flex-basis: #{100% / $i};
+          flex-basis: #{math.div(100%, $i)};
         }
       }
     }
