@@ -27,6 +27,12 @@
   }
 }
 
+@each $name, $value in $grid-flows {
+  .grid-flow\:#{$name} {
+    grid-auto-flow: $value;
+  }
+}
+
 @each $bpName, $bpValue in $breakpoints {
   @each $name, $value in $columns {
     .#{$bpName}\:grids-cols\:#{$name} {
@@ -52,6 +58,13 @@
     .#{$bpName}\:col-end\:#{$name} {
       @media (min-width: #{$bpValue}) {
         grid-column-end: $value;
+      }
+    }
+  }
+  @each $name, $value in $grid-flows {
+    .#{$bpName}\:grid-flow\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-auto-flow: $value;
       }
     }
   }
