@@ -91,6 +91,15 @@ $border-widths: (
   "1": 1rem
 );
 
+$gaps: (
+  "0": 0,
+  "1\\/8": 0.125rem,
+  "1\\/4": 0.25rem,
+  "1\\/2": 0.5rem,
+  "3\\/4": 0.75rem,
+  "1": 1rem
+);
+
 $vertical-aligns: (
   "baseline": baseline,
   "top": top,
