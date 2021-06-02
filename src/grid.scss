@@ -10,14 +10,30 @@
   .col-span\:#{$value} {
     grid-column: span $value / span $value;
   }
+  .row-span\:#{$value} {
+    grid-row: span $value / span $value;
+  }
+}
+
+.col-span\:auto {
+  grid-column: auto;
+}
+.col-span\:full {
+  grid-column: 1 / -1;
+}
+.row-span\:auto {
+  grid-row: auto;
+}
+.row-span\:full {
+  grid-row: 1 / -1;
+}
+
+@each $value in $grid-columns {
   .col-start\:#{$value} {
     grid-column-start: $value;
   }
   .col-end\:#{$value} {
     grid-column-end: $value;
-  }
-  .row-span\:#{$value} {
-    grid-row: span $value / span $value;
   }
   .row-start\:#{$value} {
     grid-row-start: $value;
@@ -27,45 +43,33 @@
   }
 }
 
+.col-start\:auto {
+  grid-column-start: auto;
+}
+.col-end\:auto {
+  grid-column-end: auto;
+}
+.row-start\:auto {
+  grid-row-start: auto;
+}
+.row-end\:auto {
+  grid-row-end: auto;
+}
+
 @each $name, $value in $grid-flows {
   .grid-flow\:#{$name} {
     grid-auto-flow: $value;
   }
 }
 
-@each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $columns {
-    .#{$bpName}\:grids-cols\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
-      }
-    }
-    .#{$bpName}\:grids-rows\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-template-rows: repeat(#{$value}, minmax(0, 1fr));
-      }
-    }
-    .#{$bpName}\:col-span\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-column: span $value / span $value;
-      }
-    }
-    .#{$bpName}\:col-start\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-column-start: $value;
-      }
-    }
-    .#{$bpName}\:col-end\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-column-end: $value;
-      }
-    }
+@each $name, $value in $autos {
+  .auto-cols\:#{$name} {
+    grid-auto-columns: $value;
   }
-  @each $name, $value in $grid-flows {
-    .#{$bpName}\:grid-flow\:#{$name} {
-      @media (min-width: #{$bpValue}) {
-        grid-auto-flow: $value;
-      }
-    }
+}
+
+@each $name, $value in $autos {
+  .auto-rows\:#{$name} {
+    grid-auto-rows: $value;
   }
 }
