@@ -1,0 +1,58 @@
+@import "variables";
+
+@each $value in $columns {
+  .grid-cols\:#{$value} {
+    grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+  }
+  .grid-rows\:#{$value} {
+    grid-template-rows: repeat(#{$value}, minmax(0, 1fr));
+  }
+  .col-span\:#{$value} {
+    grid-column: span $value / span $value;
+  }
+  .col-start\:#{$value} {
+    grid-column-start: $value;
+  }
+  .col-end\:#{$value} {
+    grid-column-end: $value;
+  }
+  .row-span\:#{$value} {
+    grid-row: span $value / span $value;
+  }
+  .row-start\:#{$value} {
+    grid-row-start: $value;
+  }
+  .row-end\:#{$value} {
+    grid-row-end: $value;
+  }
+}
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $columns {
+    .#{$bpName}\:grids-cols\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-template-columns: repeat(#{$value}, minmax(0, 1fr));
+      }
+    }
+    .#{$bpName}\:grids-rows\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-template-rows: repeat(#{$value}, minmax(0, 1fr));
+      }
+    }
+    .#{$bpName}\:col-span\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-column: span $value / span $value;
+      }
+    }
+    .#{$bpName}\:col-start\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-column-start: $value;
+      }
+    }
+    .#{$bpName}\:col-end\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        grid-column-end: $value;
+      }
+    }
+  }
+}

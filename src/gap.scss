@@ -11,3 +11,23 @@
     row-gap: $value;
   }
 }
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $gaps {
+    .#{$bpName}\:gap\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        gap: $value;
+      }
+    }
+    .#{$bpName}\:gap-x\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        column-gap: $value;
+      }
+    }
+    .#{$bpName}\:gap-y\:#{$name} {
+      @media (min-width: #{$bpValue}) {
+        row-gap: $value;
+      }
+    }
+  }
+}
