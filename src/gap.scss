@@ -5,6 +5,7 @@
     gap: $value;
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
+        flex: 1 1 100%;
         flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
@@ -13,6 +14,7 @@
     column-gap: $value;    
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
+        flex: 1 1 100%;
         flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
@@ -21,6 +23,7 @@
     row-gap: $value;    
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
+        flex: 1 1 100%;
         flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
@@ -34,6 +37,7 @@
         gap: $value;    
         @each $flexName, $flexValue in $twelve-columns {
           & > .flex\:#{$flexName} {
+            flex: 1 1 100%;
             flex-basis: calc(#{$flexValue} - #{$value});
           }
         }
@@ -44,6 +48,7 @@
         column-gap: $value;    
         @each $flexName, $flexValue in $twelve-columns {
           & > .flex\:#{$flexName} {
+            flex: 1 1 100%;
             flex-basis: calc(#{$flexValue} - #{$value});
           }
         }
@@ -54,6 +59,7 @@
         row-gap: $value;    
         @each $flexName, $flexValue in $twelve-columns {
           & > .flex\:#{$flexName} {
+            flex: 1 1 100%;
             flex-basis: calc(#{$flexValue} - #{$value});
           }
         }
