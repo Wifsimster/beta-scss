@@ -443,12 +443,14 @@ $widths: (
 );
 
 $breakpoints: (
-  // 640px
-    "sm": 40rem,
-  // 800px
-    "md": 50rem,
-  // 1280px
-    "lg": 80rem
+  // 40rem * 16px
+  "sm": 640px,
+  // 50rem * 16px
+  "md": 800px,
+  // 80rem * 16px
+  "lg": 1280px,
+  // 90rem * 16px
+  "xl": 1440px
 );
 
 $table-collapse: (
