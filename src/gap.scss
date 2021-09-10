@@ -6,7 +6,7 @@
     
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
-        flex-basis: calc($flexValue - $value);
+        flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
   }
@@ -15,7 +15,7 @@
     
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
-        flex-basis: calc($flexValue - $value);
+        flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
   }
@@ -24,7 +24,7 @@
     
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
-        flex-basis: calc($flexValue - $value);
+        flex-basis: calc(#{$flexValue} - #{$value});
       }
     }
   }
