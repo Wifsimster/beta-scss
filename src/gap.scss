@@ -3,12 +3,30 @@
 @each $name, $value in $gaps {
   .gap\:#{$name} {
     gap: $value;
+    
+    @each $flexName, $flexValue in $twelve-columns {
+      & > .flex\:#{$flexName} {
+        flex-basis: calc($flexValue - $value);
+      }
+    }
   }
   .gap-x\:#{$name} {
     column-gap: $value;
+    
+    @each $flexName, $flexValue in $twelve-columns {
+      & > .flex\:#{$flexName} {
+        flex-basis: calc($flexValue - $value);
+      }
+    }
   }
   .gap-y\:#{$name} {
     row-gap: $value;
+    
+    @each $flexName, $flexValue in $twelve-columns {
+      & > .flex\:#{$flexName} {
+        flex-basis: calc($flexValue - $value);
+      }
+    }
   }
 }
 
