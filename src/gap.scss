@@ -3,7 +3,6 @@
 @each $name, $value in $gaps {
   .gap\:#{$name} {
     gap: $value;
-    
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
         flex-basis: calc(#{$flexValue} - #{$value});
@@ -11,8 +10,7 @@
     }
   }
   .gap-x\:#{$name} {
-    column-gap: $value;
-    
+    column-gap: $value;    
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
         flex-basis: calc(#{$flexValue} - #{$value});
@@ -20,8 +18,7 @@
     }
   }
   .gap-y\:#{$name} {
-    row-gap: $value;
-    
+    row-gap: $value;    
     @each $flexName, $flexValue in $twelve-columns {
       & > .flex\:#{$flexName} {
         flex-basis: calc(#{$flexValue} - #{$value});
@@ -34,17 +31,32 @@
   @each $name, $value in $gaps {
     .#{$bpName}\:gap\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        gap: $value;
+        gap: $value;    
+        @each $flexName, $flexValue in $twelve-columns {
+          & > .flex\:#{$flexName} {
+            flex-basis: calc(#{$flexValue} - #{$value});
+          }
+        }
       }
     }
     .#{$bpName}\:gap-x\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        column-gap: $value;
+        column-gap: $value;    
+        @each $flexName, $flexValue in $twelve-columns {
+          & > .flex\:#{$flexName} {
+            flex-basis: calc(#{$flexValue} - #{$value});
+          }
+        }
       }
     }
     .#{$bpName}\:gap-y\:#{$name} {
       @media (min-width: #{$bpValue}) {
-        row-gap: $value;
+        row-gap: $value;    
+        @each $flexName, $flexValue in $twelve-columns {
+          & > .flex\:#{$flexName} {
+            flex-basis: calc(#{$flexValue} - #{$value});
+          }
+        }
       }
     }
   }
