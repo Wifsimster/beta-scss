@@ -18,9 +18,9 @@
 @each $columns in $responsive-columns {
   $factor: math.div(1920, $columns);
   @for $i from $columns through 1 {
-    @media (min-width: #{$i * $factor}) and (max-width: #{(($i + 1) * $factor) - 1}) {
+    @media (min-width: #{$i * $factor} + "px") {
       .responsive\:#{$columns} {
-        & > div {
+        > div {
           flex-basis: #{math.div(100%, $i)};
         }
       }
@@ -29,7 +29,7 @@
   // 4K resolution
   @media (min-width: 2560px) {
     .responsive\:#{$columns} {
-      & > div {
+      > div {
         flex-basis: #{math.div(100%, $columns)};
       }
     }

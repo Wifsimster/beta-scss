@@ -17,10 +17,10 @@
     "css-loader": "^5.2.7",
     "eslint": "^7.32.0",
     "husky": "^6.0.0",
-    "sass": "^1.39.2",
+    "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^2.0.0",
-    "webpack": "^5.52.0",
+    "webpack": "^5.57.1",
     "webpack-cli": "^4.8.0"
   },
   "repository": {
