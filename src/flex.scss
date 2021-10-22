@@ -6,9 +6,31 @@
   }
 }
 
+// ie : sm:flex:col
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $twelve-columns {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:flex\:#{$name} {
+        flex-direction: $value;
+      }
+    }
+  }
+}
+
 @each $name, $value in $flex-wraps {
   .flex\:#{$name} {
     flex-wrap: $value;
+  }
+}
+
+// ie : md:flex:wrap
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $flex-wraps {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:flex\:#{$name} {
+        flex-wrap: $value;
+      }
+    }
   }
 }
 
@@ -18,9 +40,29 @@
   }
 }
 
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $align-items {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:items\:#{$name} {
+        align-items: $value;
+      }
+    }
+  }
+}
+
 @each $name, $value in $align-contents {
   .content\:#{$name} {
     align-content: $value;
+  }
+}
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $align-contents {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:content\:#{$name} {
+        align-content: $value;
+      }
+    }
   }
 }
 
@@ -30,9 +72,29 @@
   }
 }
 
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $align-selfs {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:self\:#{$name} {
+        align-self: $value;
+      }
+    }
+  }
+}
+
 @each $name, $value in $justify-contents {
   .justify\:#{$name} {
     justify-content: $value;
+  }
+}
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $justify-contents {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:justify\:#{$name} {
+        justify-content: $value;
+      }
+    }
   }
 }
 
@@ -42,9 +104,29 @@
   }
 }
 
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $flexs {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:flex\:#{$name} {
+        flex: $value;
+      }
+    }
+  }
+}
+
 @each $name, $value in $orders {
   .order\:#{$name} {
     order: $value;
+  }
+}
+
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $orders {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:order\:#{$name} {
+        order: $value;
+      }
+    }
   }
 }
 
@@ -54,13 +136,31 @@
   }
 }
 
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $grows {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:flex\:#{$name} {
+        flex-grow: $value;
+      }
+    }
+  }
+}
+
 @each $name, $value in $shrinks {
   .flex\:#{$name} {
     flex-shrink: $value;
   }
 }
 
-// Responsive flex items
+@each $bpName, $bpValue in $breakpoints {
+  @each $name, $value in $shrinks {
+    @media (min-width: #{$bpValue}) {
+      .#{$bpName}\:flex\:#{$name} {
+        flex-shrink: $value;
+      }
+    }
+  }
+}
 
 // ie : flex:1/12
 @each $name, $value in $twelve-columns {
@@ -69,36 +169,12 @@
   }
 }
 
+// ie : sm:flex:3/12
 @each $bpName, $bpValue in $breakpoints {
-  // ie : sm:flex:3/12
   @each $name, $value in $twelve-columns {
     @media (min-width: #{$bpValue}) {
       .#{$bpName}\:flex\:#{$name} {
         flex-basis: $value;
-      }
-    }
-  }
-
-  @each $name, $value in $align-items {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:items\:#{$name} {
-        align-items: $value;
-      }
-    }
-  }
-
-  @each $name, $value in $align-contents {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:content\:#{$name} {
-        align-content: $value;
-      }
-    }
-  }
-
-  @each $name, $value in $justify-contents {
-    @media (min-width: #{$bpValue}) {
-      .#{$bpName}\:justify\:#{$name} {
-        justify-content: $value;
       }
     }
   }
