@@ -6,9 +6,8 @@
   }
 }
 
-// ie : sm:flex:col
 @each $bpName, $bpValue in $breakpoints {
-  @each $name, $value in $twelve-columns {
+  @each $name, $value in $flex-directions {
     @media (min-width: #{$bpValue}) {
       .#{$bpName}\:flex\:#{$name} {
         flex-direction: $value;
